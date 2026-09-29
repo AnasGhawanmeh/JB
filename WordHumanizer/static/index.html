@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Word Humanizer</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<main class="shell">
+  <header class="top">
+    <h1>Word Humanizer</h1>
+    <p class="sub">Proofread and polish Word documents while keeping formatting, citations, numbers and terminology intact.</p>
+  </header>
+
+  <section class="card" id="upload-card">
+    <label id="drop" class="drop" for="file">
+      <input id="file" type="file" accept=".docx,.doc" hidden>
+      <span class="drop-icon" aria-hidden="true">📄</span>
+      <span id="drop-text"><strong>Drop your Word document here</strong><br>or click to choose a .docx file</span>
+    </label>
+
+    <div class="grid">
+      <div class="field">
+        <label for="language">Language</label>
+        <select id="language"></select>
+      </div>
+      <div class="field">
+        <label for="mode">Mode</label>
+        <select id="mode">
+          <option value="academic">Academic</option>
+          <option value="standard">Standard</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="columns">
+      <fieldset>
+        <legend>Processing</legend>
+        <label><input type="checkbox" data-opt="grammar" checked> Grammar</label>
+        <label><input type="checkbox" data-opt="spelling" checked> Spelling</label>
+        <label><input type="checkbox" data-opt="punctuation" checked> Punctuation</label>
+        <label><input type="checkbox" data-opt="style" checked> Style</label>
+        <label><input type="checkbox" data-opt="picky"> Picky mode (more suggestions)</label>
+        <label id="rewrite-row"><input type="checkbox" data-opt="rewrite"> Rewrite sentences for clarity</label>
+        <div class="field inline" id="style-row">
+          <label for="rewrite_style">Rewrite style</label>
+          <select id="rewrite_style"></select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Preserve</legend>
+        <label><input type="checkbox" data-opt="protect_citations" checked> Citations</label>
+        <label><input type="checkbox" data-opt="protect_urls" checked> URLs, DOIs, e-mails</label>
+        <label><input type="checkbox" data-opt="protect_numbers" checked> Numbers &amp; units</label>
+        <label><input type="checkbox" data-opt="protect_terms" checked> Technical terms</label>
+        <label><input type="checkbox" data-opt="protect_equations" checked> Equations</label>
+        <label><input type="checkbox" data-opt="auto_detect_terms" checked> Auto-detect acronyms &amp; formulas</label>
+      </fieldset>
+      <fieldset>
+        <legend>Parts of the document</legend>
+        <label><input type="checkbox" data-opt="process_body" checked> Body text</label>
+        <label><input type="checkbox" data-opt="process_tables" checked> Tables</label>
+        <label><input type="checkbox" data-opt="process_headings"> Headings</label>
+        <label><input type="checkbox" data-opt="process_captions" checked> Captions</label>
+        <label><input type="checkbox" data-opt="process_headers"> Headers</label>
+        <label><input type="checkbox" data-opt="process_footers"> Footers</label>
+      </fieldset>
+    </div>
+
+    <div class="field">
+      <label for="terms">Extra protected terms <span class="hint">(comma or line separated)</span></label>
+      <textarea id="terms" rows="2" placeholder="LEAP, SimaPro, Zarqa, JUST"></textarea>
+    </div>
+
+    <button id="go" class="primary" disabled>Process document</button>
+    <p id="error" class="error" role="alert"></p>
+  </section>
+
+  <section class="card hidden" id="progress-card">
+    <div class="row">
+      <strong id="job-name"></strong>
+      <button id="cancel" class="ghost">Cancel</button>
+    </div>
+    <div class="bar"><div id="bar-fill"></div></div>
+    <p id="status" class="muted"></p>
+  </section>
+
+  <section class="card hidden" id="result-card">
+    <div class="row">
+      <h2>Result</h2>
+      <button id="again" class="ghost">Process another file</button>
+    </div>
+    <div class="stats" id="stats"></div>
+    <div class="actions">
+      <a id="download" class="primary button" href="#">Download processed Word file</a>
+      <a id="download-report" class="ghost button" href="#">Download report (.txt)</a>
+    </div>
+    <h3>Validation</h3>
+    <ul id="checks" class="checks"></ul>
+    <details id="warnings-box" class="hidden"><summary>Warnings</summary><ul id="warnings"></ul></details>
+    <h3>Changes <span id="change-count" class="muted"></span></h3>
+    <div class="changes" id="changes"></div>
+  </section>
+
+  <footer class="foot muted">
+    Grammar, spelling and style checking by LanguageTool. The original file is never modified;
+    uploads are deleted after processing. Review the changes before submitting any document.
+  </footer>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+:root {
+  --bg: #f6f7f9;
+  --card: #ffffff;
+  --text: #1c1f24;
+  --muted: #5f6672;
+  --border: #dde1e7;
+  --accent: #2458d6;
+  --accent-text: #ffffff;
+  --ok: #1d7a46;
+  --bad: #b3261e;
+  --del: #fde8e7;
+  --ins: #e5f5ea;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161a;
+    --card: #1d2026;
+    --text: #e7e9ee;
+    --muted: #9aa1ad;
+    --border: #30343c;
+    --accent: #6f9bff;
+    --accent-text: #0d1118;
+    --ok: #5cc98a;
+    --bad: #ff8a80;
+    --del: #4a2422;
+    --ins: #1f3d2a;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+.shell { max-width: 920px; margin: 0 auto; padding: 24px 16px 48px; }
+.top h1 { margin: 0 0 4px; font-size: 1.7rem; }
+.sub, .muted, .hint { color: var(--muted); }
+.hint { font-weight: normal; font-size: .85em; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.hidden { display: none !important; }
+.drop {
+  display: flex; align-items: center; gap: 16px;
+  border: 2px dashed var(--border); border-radius: 10px;
+  padding: 24px; cursor: pointer; transition: border-color .15s, background .15s;
+}
+.drop.over, .drop:hover { border-color: var(--accent); }
+.drop-icon { font-size: 2rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 16px; }
+.columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin-top: 12px; }
+fieldset { border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px; margin: 0; }
+legend { font-weight: 600; padding: 0 4px; }
+fieldset > label { display: block; padding: 2px 0; }
+.field { display: flex; flex-direction: column; gap: 4px; margin-top: 12px; }
+.field.inline { margin-top: 6px; }
+.field > label { font-weight: 600; }
+select, textarea {
+  font: inherit; color: var(--text); background: var(--bg);
+  border: 1px solid var(--border); border-radius: 8px; padding: 7px 9px; width: 100%;
+}
+button, .button {
+  font: inherit; border-radius: 8px; padding: 9px 16px; cursor: pointer;
+  border: 1px solid var(--border); background: transparent; color: var(--text);
+  text-decoration: none; display: inline-block;
+}
+.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-text); font-weight: 600; }
+button.primary { margin-top: 16px; width: 100%; padding: 12px; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.error { color: var(--bad); min-height: 1.2em; margin: 8px 0 0; }
+.row { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.row h2 { margin: 0; }
+.bar { height: 12px; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; margin-top: 14px; }
+#bar-fill { height: 100%; width: 0; background: var(--accent); transition: width .3s; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin: 16px 0; }
+.stat { border: 1px solid var(--border); border-radius: 10px; padding: 10px; }
+.stat b { display: block; font-size: 1.4rem; }
+.stat span { color: var(--muted); font-size: .85rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.checks { list-style: none; padding: 0; margin: 0; }
+.checks li::before { content: "✓ "; color: var(--ok); font-weight: 700; }
+.checks li.fail::before { content: "✗ "; color: var(--bad); }
+.changes { display: flex; flex-direction: column; gap: 8px; max-height: 480px; overflow: auto; }
+.change { border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: .92rem; overflow-wrap: anywhere; }
+.change .meta { color: var(--muted); font-size: .8rem; }
+del { background: var(--del); text-decoration: line-through; padding: 0 2px; border-radius: 3px; }
+ins { background: var(--ins); text-decoration: none; padding: 0 2px; border-radius: 3px; }
+.foot { margin-top: 24px; font-size: .85rem; }
+@media (max-width: 560px) {
+  .row { flex-direction: column; align-items: stretch; }
+}

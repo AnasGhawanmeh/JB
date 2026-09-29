@@ -1,0 +1,14 @@
+<!-- Fetches a self-hosted LanguageTool server from Maven Central.
+     Usage: see tools/languagetool/start_languagetool.sh -->
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>local.wordhumanizer</groupId>
+  <artifactId>languagetool-server-bundle</artifactId>
+  <version>1</version>
+  <properties><lt.version>6.6</lt.version></properties>
+  <dependencies>
+    <dependency><groupId>org.languagetool</groupId><artifactId>languagetool-server</artifactId><version>${lt.version}</version></dependency>
+    <dependency><groupId>org.languagetool</groupId><artifactId>language-en</artifactId><version>${lt.version}</version></dependency>
+    <!-- add more languages as needed, e.g. language-de, language-fr, language-ar -->
+  </dependencies>
+</project>

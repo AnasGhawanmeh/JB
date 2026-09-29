@@ -83,7 +83,8 @@ captions, table cells, references and quotes only get corrections.
 ### Web interface
 
 ```bash
-./run.sh          # Windows: run.bat
+# Windows: double-click "Start Word Humanizer.bat"
+# macOS/Linux: double-click "Start Word Humanizer.command" (or run it in a terminal)
 # open http://localhost:8000
 ```
 

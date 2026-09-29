@@ -75,8 +75,20 @@ REWRITE_MODEL=claude-opus-5-5
 ```
 
 Styles: natural, professional, academic, simple, concise, formal, technical,
-business. Only body paragraphs with at least 8 words are rewritten. Headings,
-captions, table cells, references and quotes only get corrections.
+business.
+
+Depth:
+
+* **Light** (default) changes only sentences that are unclear, awkward or
+  wordy. Paragraphs with at least 8 words are sent for rewriting.
+* **Thorough** reworks most sentences. It restructures stiff sentences, varies
+  sentence length and openings, and replaces filler and stock phrases, while
+  keeping the same content, order of ideas and length. Paragraphs with at least
+  5 words are sent. Use `--rewrite-level thorough` on the command line.
+
+At both levels the same safety checks apply. A rewrite is thrown away if it
+changes a number, citation, URL or protected term. Headings, captions, table
+cells, references and quotes only get corrections.
 
 ## Usage
 

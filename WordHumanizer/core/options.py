@@ -13,6 +13,11 @@ REWRITE_STYLES = {
     "business": "Direct, action-oriented business prose.",
 }
 
+REWRITE_LEVELS = {
+    "light": "Light: polish wording only where a sentence is unclear; clear sentences stay as they are.",
+    "thorough": "Thorough: rework most sentences for clarity and natural flow while keeping every fact.",
+}
+
 MODES = ("academic", "standard")
 
 
@@ -31,6 +36,7 @@ class ProcessingOptions:
     # Optional rewrite stage
     rewrite: bool = False
     rewrite_style: str = "natural"
+    rewrite_level: str = "light"
 
     # What to process
     process_body: bool = True
@@ -56,6 +62,8 @@ class ProcessingOptions:
             self.mode = "academic"
         if self.rewrite_style not in REWRITE_STYLES:
             self.rewrite_style = "natural"
+        if self.rewrite_level not in REWRITE_LEVELS:
+            self.rewrite_level = "light"
         if isinstance(self.protected_terms, str):
             self.protected_terms = [t.strip() for t in self.protected_terms.replace("\n", ",").split(",")]
         self.protected_terms = [t for t in (s.strip() for s in self.protected_terms) if t]

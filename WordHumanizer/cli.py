@@ -4,6 +4,7 @@ Examples:
     python cli.py input/My_Research.docx
     python cli.py thesis.docx -o output/thesis_checked.docx --language en-GB --no-style
     python cli.py thesis.docx --rewrite --rewrite-style academic --terms "LEAP,SimaPro"
+    python cli.py thesis.docx --rewrite --rewrite-level thorough
 """
 
 import argparse
@@ -13,7 +14,7 @@ from pathlib import Path
 
 from config import get_settings
 from core.language_tool_client import LanguageToolClient
-from core.options import REWRITE_STYLES, ProcessingOptions
+from core.options import REWRITE_LEVELS, REWRITE_STYLES, ProcessingOptions
 from core.pipeline import DocumentProcessor
 from core.rewriting_engine import create_rewriting_engine
 from utils.file_utils import (InvalidDocumentError, convert_doc_to_docx,
@@ -32,6 +33,8 @@ def build_parser():
     p.add_argument("--picky", action="store_true", help="LanguageTool picky mode")
     p.add_argument("--rewrite", action="store_true", help="enable the rewriting stage (needs REWRITE_PROVIDER)")
     p.add_argument("--rewrite-style", choices=sorted(REWRITE_STYLES), default="natural")
+    p.add_argument("--rewrite-level", choices=list(REWRITE_LEVELS), default="light",
+                   help="light: fix unclear sentences only; thorough: rework most sentences")
     p.add_argument("--headings", action="store_true", help="also correct headings")
     p.add_argument("--headers", action="store_true", help="also process page headers")
     p.add_argument("--footers", action="store_true", help="also process page footers")
@@ -70,6 +73,7 @@ def main(argv=None):
         grammar=not args.no_grammar, spelling=not args.no_spelling,
         punctuation=not args.no_punctuation, style=not args.no_style,
         picky=args.picky, rewrite=args.rewrite, rewrite_style=args.rewrite_style,
+        rewrite_level=args.rewrite_level,
         process_tables=not args.no_tables, process_headers=args.headers,
         process_footers=args.footers,
         protected_terms=args.terms,

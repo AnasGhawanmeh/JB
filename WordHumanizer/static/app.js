@@ -18,6 +18,15 @@
     for (const style of config.rewrite_styles) {
       $("rewrite_style").add(new Option(style[0].toUpperCase() + style.slice(1), style));
     }
+    for (const [level, text] of Object.entries(config.rewrite_levels || {})) {
+      $("rewrite_level").add(new Option(text.split(":")[0], level));
+    }
+    const showHint = () => {
+      const text = (config.rewrite_levels || {})[$("rewrite_level").value] || "";
+      $("level-hint").textContent = text.split(": ").slice(1).join(": ");
+    };
+    $("rewrite_level").addEventListener("change", showHint);
+    showHint();
     if (!config.rewrite_available) {
       const box = document.querySelector('[data-opt="rewrite"]');
       box.disabled = true;
@@ -61,6 +70,7 @@
       language: $("language").value,
       mode: $("mode").value,
       rewrite_style: $("rewrite_style").value,
+      rewrite_level: $("rewrite_level").value,
       protected_terms: $("terms").value,
       skip_capitalized_spelling: $("mode").value === "academic",
     };

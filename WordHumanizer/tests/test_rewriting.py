@@ -17,8 +17,9 @@ class ScriptedRewriter(RewritingEngine):
         self.func = func
         self.seen = []
 
-    def rewrite(self, text, style="natural", language="en-US"):
+    def rewrite(self, text, style="natural", language="en-US", level="light"):
         self.seen.append(text)
+        self.levels = getattr(self, "levels", []) + [level]
         return self.func(text)
 
 
@@ -135,3 +136,34 @@ def test_claude_engine_request_and_refusal():
 def test_factory_defaults_to_noop():
     settings = SimpleNamespace(rewrite_provider="none", rewrite_model="m")
     assert isinstance(create_rewriting_engine(settings), NoOpRewritingEngine)
+
+
+def test_thorough_level_reaches_rewriter_and_prompt(tmp_path):
+    rewriter = ScriptedRewriter(lambda m: m)
+    path = build(tmp_path, [("Emissions rose sharply in the city last year.", None)])  # 8 words
+    run(tmp_path, rewriter, path=path, rewrite_level="thorough")
+    assert rewriter.levels == ["thorough"]
+
+    short = build(tmp_path, [("Emissions rose sharply last year.", None)])  # 5 words
+    rewriter_light = ScriptedRewriter(lambda m: m)
+    run(tmp_path, rewriter_light, path=short, rewrite_level="light")
+    assert rewriter_light.seen == []
+    rewriter_thorough = ScriptedRewriter(lambda m: m)
+    run(tmp_path, rewriter_thorough, path=short, rewrite_level="thorough")
+    assert len(rewriter_thorough.seen) == 1
+
+    calls = []
+
+    def create(**kwargs):
+        calls.append(kwargs)
+        return SimpleNamespace(stop_reason="end_turn", content=[SimpleNamespace(type="text", text="ok")])
+
+    engine = ClaudeRewritingEngine(client=SimpleNamespace(beta=SimpleNamespace(messages=SimpleNamespace(create=create))))
+    engine.rewrite("x", level="thorough")
+    engine.rewrite("x", level="light")
+    assert "Rework most sentences" in calls[0]["system"] and calls[0]["output_config"]["effort"] == "medium"
+    assert "minimal or no changes" in calls[1]["system"] and calls[1]["output_config"]["effort"] == "low"
+
+
+def test_invalid_level_falls_back_to_light():
+    assert ProcessingOptions(rewrite_level="extreme").rewrite_level == "light"

@@ -13,7 +13,7 @@ from fastapi.staticfiles import StaticFiles
 from config import BASE_DIR, get_settings
 from core.jobs import JobManager
 from core.language_tool_client import LanguageToolClient
-from core.options import REWRITE_STYLES, ProcessingOptions
+from core.options import REWRITE_LEVELS, REWRITE_STYLES, ProcessingOptions
 from core.pipeline import DocumentProcessor
 from core.rewriting_engine import create_rewriting_engine
 from utils.file_utils import (InvalidDocumentError, convert_doc_to_docx,
@@ -79,6 +79,7 @@ def create_app(settings=None, processor_factory=None):
             "languages": LANGUAGES,
             "default_language": settings.language,
             "rewrite_styles": list(REWRITE_STYLES),
+            "rewrite_levels": REWRITE_LEVELS,
             "rewrite_available": settings.rewrite_provider not in ("", "none"),
             "defaults": ProcessingOptions(language=settings.language).to_dict(),
             "max_upload_mb": settings.max_upload_mb,

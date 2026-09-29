@@ -29,7 +29,7 @@ from utils.text_utils import snippet, word_count
 
 log = get_logger("pipeline")
 
-MIN_WORDS_TO_REWRITE = 8
+MIN_WORDS_TO_REWRITE = {"light": 8, "thorough": 5}
 
 
 @dataclass
@@ -184,7 +184,8 @@ class DocumentProcessor:
             item.text = paragraph_text(segments)
 
     def _rewrite(self, items, report):
-        candidates = [i for i in items if word_count(i.text) >= MIN_WORDS_TO_REWRITE]
+        min_words = MIN_WORDS_TO_REWRITE.get(self.options.rewrite_level, 8)
+        candidates = [i for i in items if word_count(i.text) >= min_words]
         total = max(1, len(candidates))
         for number, item in enumerate(candidates, start=1):
             self._check_cancel()
@@ -206,7 +207,8 @@ class DocumentProcessor:
         spans = self.protection.find_spans(text, locked_spans(segments))
         masked, mapping = self.protection.mask(text, spans)
 
-        proposal = self.rewriter.rewrite(masked, style=o.rewrite_style, language=o.language)
+        proposal = self.rewriter.rewrite(masked, style=o.rewrite_style, language=o.language,
+                                         level=o.rewrite_level)
         restored, problems = self.protection.unmask(proposal, mapping)
         if not problems:
             # Verification pass: LanguageTool re-checks the rewritten paragraph.

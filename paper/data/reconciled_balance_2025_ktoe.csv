@@ -1,0 +1,20 @@
+flow,crude_oil,refined_products,natural_gas,lng,coal_lignite,solar_wind,electricity,total
+"Indigenous production",49742.6,,41361.2,,,387.8,,91491.6
+"Imports",9668.9,,,,172.1,,,9841.0
+"Exports",-31345.5,-16578.1,,-13305.9,-3.3,,,-61232.8
+"International marine bunkers",,-453.8,,,,,,-453.8
+"International aviation bunkers",,-723.4,,,,,,-723.4
+"TPES",28066.0,-17755.4,41361.2,-13305.9,168.7,387.8,,38922.5
+"Oil refineries",-28066.0,26662.7,,,,,,-1403.3
+"Power-and-water plants",,,-13974.0,,,-387.8,4383.7,-9978.1
+"LNG plants",,,-15273.3,13305.9,,,,-1967.4
+"Upstream own use",,,-1782.0,,,,,-1782.0
+"Distribution losses",,,,,,,-510.9,-510.9
+"Statistical difference",0.0,0.0,0.9,0.0,0.0,0.0,0.0,0.9
+"TFC",,8907.4,10331.0,,168.7,,3872.8,23280.0
+"Industrial",,1228.8,10331.0,,168.7,,699.7,12428.3
+"Transport",,4555.0,,,,,,4555.0
+"Residential",,627.7,,,,,1601.7,2229.4
+"Commercial and government",,,,,,,1436.2,1436.2
+"Agriculture & other",,,,,,,135.1,135.1
+"Non-energy use",,2495.9,,,,,,2495.9

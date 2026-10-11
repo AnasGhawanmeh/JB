@@ -27,12 +27,13 @@ cd scripts
 python model.py && python make_figures.py && node build_docx.js
 ```
 
-## Key results (central case, 90% interval)
+## Key results (central case, 90% interval; NCV basis)
 
-* TPES: 38,923 ktoe (37,101–40,669)
-* Self-sufficiency ratio: 235.1% (228.3–242.9)
-* CO₂ from fuel combustion: 88.1 Mt (83.4–92.6)
-* Avoided CO₂ from renewables: 2.02 Mt (1.76–2.39)
+* Use-side TPES: 36,715 ktoe (35,830–40,250); supply-side TPES: 25,822 ktoe
+* Crude statistical difference: 10,893 ktoe (219 kb/d)
+* Self-sufficiency ratio: 242.8% (229.6–247.6)
+* CO₂ from fuel combustion: 78.4 Mt (76.0–87.2)
+* Avoided CO₂ from renewables: 2.02 Mt (1.75–2.38)
 
 ## Inputs
 

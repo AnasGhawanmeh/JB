@@ -76,15 +76,15 @@ def fig1():
     fig, ax = plt.subplots(figsize=(7.2, 4.8))
     ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.axis("off")
     cols, w = [0.005, 0.255, 0.505, 0.755], 0.225
-    heads = ["1  Activity data", "2  Harmonisation", "3  Diagnostics", "4  Analysis"]
+    heads = ["1  Activity data", "2  Harmonisation", "3  Closure & calibration", "4  Analysis"]
     items = [
-        ["National statistics: oil,\ngas, electricity, trade", "Refinery, LNG & plant-\nlevel renewable data",
-         "Customs (HS 2701/2704);\nport bunker records", "External benchmarks:\nEI, GCP, Ember (2015–24)"],
-        ["Product-specific NCV &\ndensity (IPCC 2006)", "LNG 1.177 toe/t;\ngas 41.868 GJ/toe basis",
-         "Reinjection, bunkers &\nnon-energy use separated", "Retail sales allocated\nby product"],
-        ["Column closure:\nstatistical difference", "Process closure:\nη refinery, LNG, power",
-         "Triangulation vs\nEI & GCP aggregates", "Monte Carlo propagation\n(10,000 draws)"],
-        ["Reconciled IRES balance\n& IPCC Tier 1 inventory", "LMDI decomposition\nof CO₂, 2015–2024",
+        ["National statistics: oil,\ngas, electricity, trade", "Plant-level refinery,\nLNG & renewable data",
+         "Customs (HS 2701/2704);\nport bunker records", "External series: EI,\nGCP, Ember (2015–2025)"],
+        ["NCV basis throughout\n(gas NCV = 0.9 × GCV)", "Product-specific NCV &\ndensity (IPCC 2006)",
+         "Reinjection, feedstock &\nbunkers separated", "Retail sales allocated\nby product"],
+        ["T1 column closure\n(statistical difference)", "T2 process closure:\nrefinery, LNG, power",
+         "Calibration: oil-field\ngas vs EI gas use", "Validation on data not\nused in calibration"],
+        ["Reconciled balance &\nIPCC Tier 1 inventory", "Monte Carlo (10,000)\n& LMDI 2015–2024",
          "Avoided CO₂, gas freed\n& rent preserved", "Rent incidence &\npolicy instruments"],
     ]
     fills = ["#f3f2ef", "#f3f2ef", "#eaf2fb", "#e8f6f0"]
@@ -97,10 +97,9 @@ def fig1():
         for i in range(4):
             yy = 0.69 - i * 0.205 + 0.085
             arrow(ax, x + w + 0.003, yy, x + 0.25 - 0.003, yy)
-    ax.text(0.5, 0.0, "Failed closure tests (stage 3) trigger re-harmonisation (stage 2) before analysis",
-            ha="center", fontsize=7, color=MUTED, style="italic")
+    ax.text(0.5, 0.0, "Failed closure tests (stage 3) trigger re-harmonisation (stage 2); residual gaps are reported, not imputed",
+            ha="center", fontsize=6.8, color=MUTED, style="italic")
     save(fig, "Fig01_framework")
-
 
 # ===================================================================== Fig 2 Sankey
 def ribbon(ax, x0, y0a, y0b, x1, y1a, y1b, color, alpha=0.4, hatch=None):
@@ -123,6 +122,7 @@ def fig2():
     s = c["sectors"]; es = c["elec_sec"]
     nodes = {
         "Crude oil production": (0, C["oil"]), "Crude oil imports": (0, C["oil"]),
+        "Crude statistical difference": (0, C["gap"]),
         "Natural gas (marketable)": (0, C["gas"]), "Solar & wind": (0, C["re"]), "Coal & lignite": (0, C["coal"]),
         "Refineries": (1, C["products"]), "LNG trains": (1, C["lng"]), "Power & water plants": (1, C["elec"]),
         "Upstream own use": (1, C["grey"]), "Gas (direct use)": (1, C["gas"]), "Coal (direct use)": (1, C["coal"]),
@@ -134,14 +134,16 @@ def fig2():
     }
     crude_dom = c["crude_prod"] - c["crude_exp"]
     pw_loss = c["gas_power"] + c["re"] - c["gen"]
+    ind_pet = c["sectors"]["Industrial"] - c["ind_fuel"] - c["coal"] - es["Industrial"]
     flows = [
         ("Crude oil production", "Exports & bunkers", c["crude_exp"], C["oil"]),
         ("Crude oil production", "Refineries", crude_dom, C["oil"]),
         ("Crude oil imports", "Refineries", c["crude_imp"], C["oil"]),
+        ("Crude statistical difference", "Refineries", -c["sd_crude"], C["gap"]),
         ("Natural gas (marketable)", "LNG trains", c["lng_feed"], C["gas"]),
         ("Natural gas (marketable)", "Power & water plants", c["gas_power"], C["gas"]),
-        ("Natural gas (marketable)", "Upstream own use", c["gas_own"], C["gas"]),
-        ("Natural gas (marketable)", "Gas (direct use)", 10_331.0, C["gas"]),
+        ("Natural gas (marketable)", "Upstream own use", c["own"], C["gas"]),
+        ("Natural gas (marketable)", "Gas (direct use)", c["gas_industry"], C["gas"]),
         ("Coal & lignite", "Coal (direct use)", c["coal"], C["coal"]),
         ("Solar & wind", "Power & water plants", c["re"], C["re"]),
         ("Refineries", "Refined products", c["ref_out"], C["products"]),
@@ -150,14 +152,15 @@ def fig2():
         ("LNG trains", "Conversion & own use", c["lng_loss"], C["gap"]),
         ("Power & water plants", "Electricity", c["gen"], C["elec"]),
         ("Power & water plants", "Conversion & own use", pw_loss, C["gap"]),
-        ("Upstream own use", "Conversion & own use", c["gas_own"], C["grey"]),
-        ("Gas (direct use)", "Industrial", 10_331.0, C["gas"]),
+        ("Upstream own use", "Conversion & own use", c["own"], C["grey"]),
+        ("Gas (direct use)", "Industrial", c["ind_fuel"], C["gas"]),
+        ("Gas (direct use)", "Non-energy use", c["chem"], C["gas"]),
         ("Coal (direct use)", "Industrial", c["coal"], C["coal"]),
         ("Refined products", "Exports & bunkers", c["prod_exp"] + c["bunk_total"], C["products"]),
-        ("Refined products", "Industrial", s["Industrial"] - 10_331.0 - c["coal"] - es["Industrial"], C["products"]),
+        ("Refined products", "Industrial", ind_pet, C["products"]),
         ("Refined products", "Transport", s["Transport"], C["products"]),
         ("Refined products", "Residential", s["Residential"] - es["Residential"], C["products"]),
-        ("Refined products", "Non-energy use", s["Non-energy use"], C["products"]),
+        ("Refined products", "Non-energy use", c["ne_oil"], C["products"]),
         ("LNG", "Exports & bunkers", c["lng_out"], C["lng"]),
         ("Electricity", "Conversion & own use", c["elec_loss"], C["elec"]),
         ("Electricity", "Industrial", es["Industrial"], C["elec"]),
@@ -210,67 +213,67 @@ def fig2():
                         fontsize=6.0, color=INK, bbox=dict(fc="white", ec="none", alpha=0.75, pad=0.6))
     for L, t in enumerate(["Primary supply", "Transformation", "Secondary carriers", "Disposition & final use"]):
         ax.text(lx[L] + nw / 2, 0.985, t, ha="center", fontsize=7.4, fontweight="bold", color=INK2)
-    ax.text(0.0, -0.015, "Reconciled 2025 balance, ktoe. Crude supply to refineries reconciled to refinery output "
-            "(Section 2.4); reinjected gas excluded from production.", fontsize=6.4, color=MUTED, style="italic")
+    ax.text(0.0, -0.015, "Reconciled 2025 balance, ktoe (NCV). Grey source ribbon: crude statistical difference "
+            "(Section 2.4.1); reinjected gas excluded from production.", fontsize=6.4, color=MUTED, style="italic")
     save(fig, "Fig02_sankey")
 
 
 # ===================================================================== Fig 3 diagnostics
 def fig3():
-    fig, axes = plt.subplots(1, 3, figsize=(7.4, 3.1), gridspec_kw=dict(width_ratios=[0.9, 1.45, 1.05]))
+    fig, axes = plt.subplots(1, 3, figsize=(7.4, 3.2), gridspec_kw=dict(width_ratios=[1.0, 1.45, 1.15]))
     ax = axes[0]
-    labs = ["Recorded\ncrude\nintake", "Intake\nimplied by\noutput", "Refinery\noutput"]
-    vals = [c["crude_rec_intake"], c["ref_intake"], c["ref_out"]]
-    b = ax.bar(range(3), vals, color=[C["oil"], "#f4b08f", C["products"]], width=0.6)
-    for i, v in enumerate(vals):
-        ax.text(i, v / 2, f"{v:,.0f}", ha="center", va="center", rotation=90, fontsize=6.6, color="white" if i != 1 else INK)
-    ax.annotate("", xy=(0, c["ref_intake"]), xytext=(0, c["crude_rec_intake"]),
-                arrowprops=dict(arrowstyle="<->", color=C["red"], lw=0.8))
-    ax.text(0.34, (c["crude_rec_intake"] + c["ref_intake"]) / 2 + 2500, f"gap\n{c['gap']:,.0f}", color=C["red"],
-            fontsize=6.6, va="center")
-    ax.set_xticks(range(3)); ax.set_xticklabels(labs, fontsize=6.6); ax.set_ylabel("ktoe"); ax.set_ylim(0, 33_000)
-    ax.yaxis.set_major_formatter(FMT); ax.grid(axis="x", visible=False)
-    ax.set_title(f"Refinery closure\n(recorded η = {c['eta_recorded']:.2f})", loc="left"); panel(ax, "a")
+    v = R["valid"]["refinery"]
+    x = np.arange(len(v)); w = 0.36
+    b1 = ax.bar(x - w / 2, [g["cap_kbd"] for g in v], w, color=C["grey"], label="Nameplate")
+    b2 = ax.bar(x + w / 2, [g["out_kbd"] for g in v], w, color=C["products"], label="Reported output")
+    vbar_labels(ax, b1, [g["cap_kbd"] for g in v], lambda t: f"{t:.0f}", size=6.4)
+    vbar_labels(ax, b2, [g["out_kbd"] for g in v], lambda t: f"{t:.0f}", size=6.4)
+    ax.set_xticks(x); ax.set_xticklabels(["Sohar +\nMina Al Fahal", "Duqm"], fontsize=6.8)
+    ax.axhline(R["valid"]["crude_supply_kbd"], color=C["red"], lw=0.8, ls="--")
+    ax.text(-0.45, R["valid"]["crude_supply_kbd"] + 6, f"recorded crude supply to all refineries: {R['valid']['crude_supply_kbd']:.0f} kb/d",
+            fontsize=5.6, color=C["red"], ha="left", va="bottom")
+    ax.set_ylabel("kb/d"); ax.set_ylim(0, 500); ax.legend(fontsize=6.0, loc="upper right", ncol=2); ax.grid(axis="x", visible=False)
+    ax.set_title(f"Refinery output vs capacity\n(implied intake {R['valid']['intake_kbd']:.0f} kb/d)", loc="left"); panel(ax, "a")
 
     ax = axes[1]
     steps = R["steps"]
-    labs = ["As compiled", "Primary elec.\n= solar & wind", "Reinjection\nexcluded", "LNG\n1.177 toe/t",
-            "Product\nfactors", "Aviation\nbunkers", "Crude intake\nreconciled", "Reconciled"]
+    labs = ["As compiled", "Primary elec. = solar & wind", "Gas on NCV basis", "Reinjection excluded",
+            "LNG 1.177 toe/t", "Product factors", "Aviation bunkers", "Crude statistical difference", "Reconciled (use side)"]
     run = 0
-    for i, (lab, v) in enumerate(steps):
+    for i, (lab, val) in enumerate(steps):
         if i in (0, len(steps) - 1):
-            ax.bar(i, v, color=C["gas"], width=0.62); run = v
-            ax.text(i, v / 2, f"{v:,.0f}", ha="center", va="center", rotation=90, fontsize=6.4, color="white")
+            ax.bar(i, val, color=C["gas"], width=0.62); run = val
+            ax.text(i, val / 2, f"{val:,.0f}", ha="center", va="center", rotation=90, fontsize=6.2, color="white")
         else:
-            base = run if v > 0 else run + v
-            ax.bar(i, abs(v), bottom=base, color=C["re"] if v > 0 else C["red"], width=0.62)
-            ax.text(i, max(run, run + v) + 700, f"{v:+,.0f}", ha="center", fontsize=5.8, color=INK2, rotation=90 if abs(v) < 3000 else 0, va="bottom")
-            run += v
-    ax.set_xticks(range(len(steps))); ax.set_xticklabels([l.replace("\n", " ") for l in labs], fontsize=6.2, rotation=40, ha="right", rotation_mode="anchor")
+            base = run if val > 0 else run + val
+            ax.bar(i, abs(val), bottom=base, color=C["re"] if val > 0 else C["red"], width=0.62,
+                   hatch="////" if "statistical" in lab else None, edgecolor="white" if "statistical" in lab else None)
+            ax.text(i, max(run, run + val) + 700, f"{val:+,.0f}", ha="center", va="bottom", fontsize=5.8, color=INK2,
+                    rotation=90 if abs(val) < 4000 else 0)
+            run += val
+    ax.set_xticks(range(len(steps))); ax.set_xticklabels(labs, fontsize=6.0, rotation=40, ha="right", rotation_mode="anchor")
     ax.set_ylim(0, 50_000); ax.yaxis.set_major_formatter(FMT); ax.set_ylabel("TPES, ktoe"); ax.grid(axis="x", visible=False)
     ax.set_title("From as-compiled to reconciled TPES", loc="left"); panel(ax, "b")
 
     ax = axes[2]
-    ts = {t["year"]: t for t in R["ts"]}
-    t24 = ts[2024]
-    pairs = [
-        ("TPES vs EI primary\nenergy (Mtoe)", c["tpes"] / 1e3, t24["pe_twh"] * 0.086),
-        ("Domestic gas use vs\nEI consumption (Mtoe)",
-         (c["gas_power"] + 10_331 + c["gas_own"] + c["lng_loss"]) / 1e3, t24["gas_cons_twh"] * 0.086),
-        ("Gas CO₂ vs GCP\n(MtCO₂ ÷ 2)", c["co2_fuel"]["Natural gas"] / 2, t24["gas_co2"] / 2),
-        ("Oil CO₂ vs GCP\n(MtCO₂ ÷ 2)", c["co2_fuel"]["Petroleum products"] / 2, t24["oil_co2"] / 2),
+    cal, val = R["calib"], R["valid"]
+    rows = [
+        ("V  Crude + condensate\nproduction (kb/d ÷ 10)", val["production_kbd"] / 10, val["ext_production_kbd"] / 10, None),
+        ("V  Oil consumption\n(Mtoe)", val["oil_ours"] / 1e3, val["oil_ei25"][0] / 1e3, val["oil_ei25"]),
+        ("V  Generation (TWh)", val["gen_ours"] / 1e3, val["gen_ember25"] / 1e3, None),
+        ("C  Gas consumption\n(Mtoe, NCV)", c["gas_cons_ei_def"] / 1e3, cal["ei_gas25_ncv"][0] / 1e3, None),
     ]
-    y = np.arange(len(pairs))[::-1]; h = 0.36
-    b1 = ax.barh(y + h / 2, [p[1] for p in pairs], h, color=C["gas"], label="This study, 2025")
-    b2 = ax.barh(y - h / 2, [p[2] for p in pairs], h, color=C["grey"], label="EI / GCP, 2024")
-    hbar_labels(ax, b1, [p[1] for p in pairs], lambda v: f"{v:.1f}", size=6.2)
-    hbar_labels(ax, b2, [p[2] for p in pairs], lambda v: f"{v:.1f}", size=6.2)
-    ax.set_yticks(y); ax.set_yticklabels([p[0] for p in pairs], fontsize=6.4); ax.set_xlim(0, 52)
-    ax.legend(loc="upper center", bbox_to_anchor=(0.4, -0.13), ncol=1, fontsize=6.2); ax.grid(axis="y", visible=False); ax.tick_params(axis="y", length=0)
-    ax.set_title("Triangulation", loc="left"); panel(ax, "c")
-    fig.tight_layout(w_pad=1.2)
+    y = np.arange(len(rows))[::-1]; h = 0.36
+    b1 = ax.barh(y + h / 2, [r[1] for r in rows], h, color=C["gas"], label="This study, 2025")
+    b2 = ax.barh(y - h / 2, [r[2] for r in rows], h, color=C["grey"], label="External, 2025*")
+    hbar_labels(ax, b1, [r[1] for r in rows], lambda t: f"{t:.1f}", size=6.0)
+    hbar_labels(ax, b2, [r[2] for r in rows], lambda t: f"{t:.1f}", size=6.0)
+    ax.set_yticks(y); ax.set_yticklabels([r[0] for r in rows], fontsize=6.2); ax.set_xlim(0, 135)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.4, -0.13), fontsize=6.0); ax.grid(axis="y", visible=False)
+    ax.tick_params(axis="y", length=0)
+    ax.set_title("Validation (V) and calibration (C)", loc="left"); panel(ax, "c")
+    fig.tight_layout(w_pad=1.0)
     save(fig, "Fig03_diagnostics")
-
 
 # ===================================================================== Fig 4 supply
 def fig4():
@@ -280,56 +283,61 @@ def fig4():
     vals = [c["gas_marketable"], c["crude_prod"], c["re"]]
     b = ax.bar(labs, vals, color=[C["gas"], C["oil"], C["re"]], width=0.6)
     for bb, v in zip(b, vals):
-        ax.text(bb.get_x() + bb.get_width() / 2, v / 2 if v > 5000 else v + 900, f"{v:,.0f}\n({v / c['production'] * 100:.1f}%)",
-                ha="center", va="center" if v > 5000 else "bottom", fontsize=6.4, color="white" if v > 5000 else INK2)
+        ax.text(bb.get_x() + bb.get_width() / 2, v / 2 if v > 5000 else v + 900,
+                f"{v:,.0f}\n({v / c['production'] * 100:.1f}%)", ha="center", va="center" if v > 5000 else "bottom",
+                fontsize=6.4, color="white" if v > 5000 else INK2)
     ax.bar(0, c["reinj"], bottom=c["gas_marketable"], color="white", edgecolor=C["gas"], hatch="////", width=0.6, lw=0.6)
     ax.text(0, c["gas_marketable"] + c["reinj"] + 600, "reinjected (excluded)", fontsize=5.8, color=C["gas"], ha="center")
-    ax.set_ylim(0, 64_000); ax.set_ylabel("ktoe"); ax.yaxis.set_major_formatter(FMT); ax.grid(axis="x", visible=False)
+    ax.set_ylim(0, 60_000); ax.set_ylabel("ktoe (NCV)"); ax.yaxis.set_major_formatter(FMT); ax.grid(axis="x", visible=False)
     ax.tick_params(axis="x", labelsize=7)
     ax.set_title(f"Indigenous production\n{c['production']:,.0f} ktoe", loc="left"); panel(ax, "a")
 
     ax = axes[1]
-    labs = ["Natural gas", "Crude oil", "Solar & wind", "Coal & lignite", "LNG", "Refined products"]
-    vals = [c["gas_marketable"], c["crude_prod"] - c["crude_exp"] + c["crude_imp"], c["re"], c["coal"],
-            -c["lng_out"], -(c["prod_exp"] + c["bunk_total"])]
-    cols = [C["gas"], C["oil"], C["re"], C["coal"], C["lng"], C["products"]]
+    labs = ["Natural gas", "Crude oil (recorded)", "Crude stat. difference", "Solar & wind", "Coal & lignite", "LNG",
+            "Refined products"]
+    vals = [c["gas_marketable"], c["crude_supply"], -c["sd_crude"], c["re"], c["coal"], -c["lng_out"],
+            -(c["prod_exp"] + c["bunk_total"])]
+    cols = [C["gas"], C["oil"], "#f4b08f", C["re"], C["coal"], C["lng"], C["products"]]
     y = np.arange(len(labs))[::-1]
     b = ax.barh(y, vals, color=cols, height=0.62)
+    b[2].set_hatch("////"); b[2].set_edgecolor("white")
     hbar_labels(ax, b, vals, lambda v: f"{v:,.0f}")
-    ax.set_yticks(y); ax.set_yticklabels(labs, fontsize=7); ax.tick_params(axis="y", length=0)
+    ax.set_yticks(y); ax.set_yticklabels(labs, fontsize=6.8); ax.tick_params(axis="y", length=0)
     ax.axvline(0, color=INK2, lw=0.6); ax.set_xlim(-46_000, 62_000); ax.set_xticks([-25_000, 0, 25_000, 50_000])
     ax.xaxis.set_major_formatter(FMT); ax.set_xlabel("ktoe (negative = net export / bunkers)"); ax.grid(axis="y", visible=False)
-    ax.set_title(f"TPES by commodity\nTotal {c['tpes']:,.0f} ktoe", loc="left"); panel(ax, "b")
+    ax.set_title(f"TPES by commodity (use side)\nTotal {c['tpes']:,.0f} ktoe", loc="left"); panel(ax, "b")
 
     ax = axes[2]
     conv = c["lng_loss"] + (c["gas_power"] + c["re"] - c["gen"]) + c["ref_loss"]
-    own = c["gas_own"] + c["elec_loss"]
+    own = c["own"] + c["elec_loss"]
     bottom = 0
     for lab, v, col in [("TFC", c["tfc"], C["elec"]), ("Conversion\nlosses", conv, C["grey"]),
                         ("Own use &\nT&D losses", own, "#c9c8c2")]:
         ax.bar(0, v, bottom=bottom, color=col, width=0.55, edgecolor="white", lw=1)
         ax.text(0.36, bottom + v / 2, f"{lab}\n{v:,.0f} ({v / c['tpes'] * 100:.0f}%)", va="center", fontsize=6.4)
         bottom += v
-    ax.set_xlim(-0.5, 1.5); ax.set_xticks([]); ax.set_ylim(0, 44_000); ax.yaxis.set_major_formatter(FMT)
+    ax.set_xlim(-0.5, 1.5); ax.set_xticks([]); ax.set_ylim(0, 42_000); ax.yaxis.set_major_formatter(FMT)
     ax.grid(axis="x", visible=False); ax.set_ylabel("ktoe")
     ax.set_title("Uses of TPES", loc="left"); panel(ax, "c")
     fig.tight_layout(w_pad=1.6)
     save(fig, "Fig04_supply")
 
-
 # ===================================================================== Fig 5 oil
 def fig5():
     fig, axes = plt.subplots(1, 2, figsize=(7.2, 2.9), gridspec_kw=dict(width_ratios=[1.1, 1]))
     ax = axes[0]
-    labs = ["Production", "Exports\n(recorded)", "Exports\n(reconciled)", "Imports", "Refinery\nintake",
-            "Refinery\noutput"]
-    vals = [c["crude_prod"], c["crude_exp_rec"], c["crude_exp"], c["crude_imp"], c["ref_intake"], c["ref_out"]]
-    cols = [C["oil"], MUTED, "#c9c8c2", C["oil"], C["oil"], C["products"]]
-    b = ax.bar(range(6), vals, color=cols, width=0.62)
-    vbar_labels(ax, b, vals, lambda v: f"{v:,.0f}", size=6.4)
-    ax.set_xticks(range(6)); ax.set_xticklabels(labs, fontsize=6.6); ax.set_ylabel("ktoe")
+    labs = ["Production", "Exports", "Imports\n(Duqm)", "Recorded\nsupply to\nrefineries", "Intake\nimplied by\noutput",
+            "Output:\nSohar+MAF", "Output:\nDuqm"]
+    vals = [c["crude_prod"], c["crude_exp"], c["crude_imp"], c["crude_supply"], c["ref_intake"], c["out_sm"], c["out_dq"]]
+    cols = [C["oil"], MUTED, C["oil"], C["oil"], "#f4b08f", C["products"], C["products"]]
+    b = ax.bar(range(7), vals, color=cols, width=0.62)
+    vbar_labels(ax, b, vals, lambda v: f"{v:,.0f}", size=6.0)
+    ax.annotate("", xy=(4, c["ref_intake"]), xytext=(3, c["crude_supply"]),
+                arrowprops=dict(arrowstyle="->", color=C["red"], lw=0.8))
+    ax.text(3.5, c["ref_intake"] + 3500, f"SD {c['sd_crude']:,.0f}", color=C["red"], fontsize=6.4, ha="center")
+    ax.set_xticks(range(7)); ax.set_xticklabels(labs, fontsize=5.5); ax.set_ylabel("ktoe")
     ax.yaxis.set_major_formatter(FMT); ax.set_ylim(0, 56_000); ax.grid(axis="x", visible=False)
-    ax.set_title("Crude oil account (reconciled)", loc="left"); panel(ax, "a")
+    ax.set_title("Crude oil account", loc="left"); panel(ax, "a")
 
     ax = axes[1]
     sl = R["slate_ktoe"]; fp = R["f_prod"]
@@ -343,41 +351,41 @@ def fig5():
     ax.set_yticks(y); ax.set_yticklabels(names, fontsize=7); ax.tick_params(axis="y", length=0)
     ax.set_xlim(0, 7_200); ax.xaxis.set_major_formatter(FMT); ax.set_xlabel("ktoe (factor, ktoe/kbbl)")
     ax.grid(axis="y", visible=False)
-    ax.set_title(f"Product-resolved slate, {tot:,.0f} ktoe", loc="left"); panel(ax, "b")
+    ax.set_title(f"Sohar + Mina Al Fahal slate, {tot:,.0f} ktoe", loc="left"); panel(ax, "b")
     fig.tight_layout(w_pad=2)
     save(fig, "Fig05_oil")
 
-
 # ===================================================================== Fig 6 gas
 def fig6():
-    fig, axes = plt.subplots(1, 2, figsize=(7.2, 2.9), gridspec_kw=dict(width_ratios=[1.55, 1]))
+    fig, axes = plt.subplots(1, 2, figsize=(7.2, 2.9), gridspec_kw=dict(width_ratios=[1.6, 1]))
     ax = axes[0]
-    labs = ["LNG\nfeedstock", "Power & water\nplants", "Oil-field gas:\nreinjected", "Oil-field gas:\ncombusted",
-            "Industrial\nfinal use"]
-    vals = [c["lng_feed"], c["gas_power"], c["reinj"], c["gas_own"], 10_331.0]
-    cols = [C["lng"], C["elec"], "#c9c8c2", C["grey"], C["gas"]]
-    b = ax.bar(range(5), vals, color=cols, width=0.62)
+    labs = ["LNG\nfeed gas", "Power &\nwater plants", "Industry:\nfuel", "Industry:\nfeedstock",
+            "Oil fields:\ncombusted", "Oil fields:\nreinjected"]
+    vals = [c["lng_feed"], c["gas_power"], c["ind_fuel"], c["chem"], c["own"], c["reinj"]]
+    cols = [C["lng"], C["elec"], C["gas"], SEC["Non-energy use"], C["grey"], "#c9c8c2"]
+    b = ax.bar(range(6), vals, color=cols, width=0.62)
     for bb, v in zip(b, vals):
         ax.text(bb.get_x() + bb.get_width() / 2, v + 250, f"{v:,.0f}\n({v / c['gas_gross'] * 100:.1f}%)",
-                ha="center", fontsize=6.4, color=INK2)
+                ha="center", fontsize=6.2, color=INK2)
     ax.bar(1, c["gas_pw_other"], bottom=c["gas_grid"], color="white", edgecolor=C["elec"], hatch="////", width=0.62, lw=0.6)
-    ax.text(1, c["gas_grid"] + c["gas_pw_other"] / 2, "desal. &\nunattrib.", fontsize=5.6, color=C["elec"], va="center", ha="center", bbox=dict(fc="white", ec="none", pad=0.5))
-    ax.set_xticks(range(5)); ax.set_xticklabels(labs, fontsize=6.6); ax.set_ylabel("ktoe"); ax.set_ylim(0, 19_500)
+    ax.text(1, c["gas_grid"] + c["gas_pw_other"] / 2, "desal. &\nunattrib.", fontsize=5.6, color=C["elec"], va="center",
+            ha="center", bbox=dict(fc="white", ec="none", pad=0.5))
+    ax.set_xticks(range(6)); ax.set_xticklabels(labs, fontsize=6.4); ax.set_ylabel("ktoe (NCV)"); ax.set_ylim(0, 18_500)
     ax.yaxis.set_major_formatter(FMT); ax.grid(axis="x", visible=False)
-    ax.set_title(f"Gross gas production {c['gas_gross']:,.0f} ktoe by use", loc="left"); panel(ax, "a")
+    ax.set_title(f"Gross gas production {c['gas_gross']:,.0f} ktoe (NCV) by use", loc="left"); panel(ax, "a")
 
     ax = axes[1]
-    labs = ["Feed gas", "LNG output", "Plant fuel\n& losses"]
-    vals = [c["lng_feed"], c["lng_out"], c["lng_loss"]]
-    b = ax.bar(range(3), vals, color=[C["gas"], C["lng"], C["grey"]], width=0.58)
+    labs = ["Feed gas:\nreported", "Feed gas:\nreconciled", "LNG\noutput"]
+    vals = [c["lng_feed_reported"], c["lng_feed"], c["lng_out"]]
+    b = ax.bar(range(3), vals, color=["#c9c8c2", C["gas"], C["lng"]], width=0.58)
     vbar_labels(ax, b, vals, lambda v: f"{v:,.0f}")
-    ax.text(1, c["lng_out"] / 2, f"η = {c['lng_eta'] * 100:.1f}%", ha="center", color="white", fontsize=7, fontweight="bold")
-    ax.set_xticks(range(3)); ax.set_xticklabels(labs, fontsize=6.8); ax.set_ylabel("ktoe"); ax.set_ylim(0, 18_000)
+    ax.text(0, vals[0] / 2, f"η = {c['eta_lng_reported'] * 100:.1f}%\n(implausible)", ha="center", fontsize=6.0, color=INK)
+    ax.text(1, vals[1] / 2, f"η = {c['eta_lng'] * 100:.1f}%", ha="center", fontsize=6.6, color="white", fontweight="bold")
+    ax.set_xticks(range(3)); ax.set_xticklabels(labs, fontsize=6.6); ax.set_ylabel("ktoe (NCV)"); ax.set_ylim(0, 17_500)
     ax.yaxis.set_major_formatter(FMT); ax.grid(axis="x", visible=False)
-    ax.set_title("LNG liquefaction (11.3 Mt)", loc="left"); panel(ax, "b")
+    ax.set_title("LNG (11.3 Mt) on a consistent NCV basis", loc="left"); panel(ax, "b")
     fig.tight_layout(w_pad=2)
     save(fig, "Fig06_gas")
-
 
 # ===================================================================== Fig 7 sectoral
 def fig7():
@@ -386,9 +394,9 @@ def fig7():
     gs = fig.add_gridspec(2, 2, width_ratios=[1.2, 1], hspace=0.75, wspace=0.45)
     ax = fig.add_subplot(gs[0, :])
     order = ["Industrial", "Transport", "Non-energy use", "Residential", "Commercial", "Government", "Agriculture & other"]
-    pet = {"Industrial": s["Industrial"] - 10_331.0 - c["coal"] - es["Industrial"], "Transport": s["Transport"],
-           "Residential": s["Residential"] - es["Residential"], "Non-energy use": s["Non-energy use"]}
-    carriers = [("Natural gas", {"Industrial": 10_331.0}, C["gas"]),
+    pet = {"Industrial": s["Industrial"] - c["ind_fuel"] - c["coal"] - es["Industrial"], "Transport": s["Transport"],
+           "Residential": s["Residential"] - es["Residential"], "Non-energy use": c["ne_oil"]}
+    carriers = [("Natural gas", {"Industrial": c["ind_fuel"], "Non-energy use": c["chem"]}, C["gas"]),
                 ("Petroleum products", pet, C["products"]),
                 ("Electricity", {k: es.get(k, 0) for k in order}, C["elec"]),
                 ("Coal & lignite", {"Industrial": c["coal"]}, C["coal"])]
@@ -399,7 +407,7 @@ def fig7():
     for yi, k in zip(y, order):
         ax.text(s[k] + 120, yi, f"{s[k]:,.0f} ({s[k] / c['tfc'] * 100:.1f}%)", va="center", fontsize=6.7, color=INK2)
     ax.set_yticks(y); ax.set_yticklabels(order, fontsize=7.2); ax.tick_params(axis="y", length=0)
-    ax.set_xlim(0, 15_000); ax.xaxis.set_major_formatter(FMT); ax.set_xlabel("ktoe"); ax.grid(axis="y", visible=False)
+    ax.set_xlim(0, 11_000); ax.xaxis.set_major_formatter(FMT); ax.set_xlabel("ktoe (NCV)"); ax.grid(axis="y", visible=False)
     ax.legend(ncol=4, loc="upper center", bbox_to_anchor=(0.5, -0.27), fontsize=6.8)
     ax.set_title(f"TFC by sector and carrier ({c['tfc']:,.0f} ktoe)", loc="left"); panel(ax, "a")
 
@@ -416,7 +424,7 @@ def fig7():
     ax = fig.add_subplot(gs[1, 1])
     labs = ["Retail:\nroad & air", "Retail:\nother", "Residual:\nnon-energy", "Residual:\nLPG", "Residual:\nnaphtha\nenergy",
             "Aviation\nbunkers"]
-    vals = [c["transport"], c["ind_retail"] + c["res_retail"], c["non_energy"], c["lpg_res"] + c["lpg_ind"],
+    vals = [c["transport"], c["ind_retail"] + c["res_retail"], c["ne_oil"], c["lpg_res"] + c["lpg_ind"],
             c["naph_ind"] + c["res_rfo"], c["jet_intl"]]
     cols = [SEC["Transport"], C["products"], SEC["Non-energy use"], SEC["Residential"], SEC["Industrial"], MUTED]
     b = ax.bar(range(6), vals, color=cols, width=0.62)
@@ -425,7 +433,6 @@ def fig7():
     ax.yaxis.set_major_formatter(FMT); ax.grid(axis="x", visible=False)
     ax.set_title(f"Domestic products ({c['domestic_prod']:,.0f} ktoe)", loc="left"); panel(ax, "c")
     save(fig, "Fig07_sectoral")
-
 
 # ===================================================================== Fig 8 electricity
 def fig8():
@@ -565,6 +572,7 @@ def fig11():
         ax.spines["left"].set_visible(False); ax.grid(False)
         panel(ax, "abc"[i])
     names = {"prod_factor_scale": "Product energy factors", "eta_ref": "Refinery efficiency",
+             "f_duqm": "Duqm product factor", "eta_lng": "LNG plant efficiency", "chem_feed": "Chemical feedstock",
              "own_comb_share": "Oil-field gas combusted", "lng_fuel_comb": "LNG loss combusted",
              "ref_loss_comb": "Refinery loss combusted", "eta_pp": "Grid fleet efficiency",
              "eta_marg": "Marginal plant efficiency", "alpha_ne": "Non-energy share (naphtha)",
@@ -605,8 +613,8 @@ def fig12():
 
     ax = axes[1]
     shs = np.array([8.85, 15, 20, 30, 40, 50]); price = np.array([6, 8, 10, 12, 14])
-    eta_l = c["lng_eta"]
-    V = np.array([[s / 100 * gen * 3.6 / 0.45 / 41.868 * 39.683e3 * (p * eta_l - 1.0 - 3.0) / 1e9 for s in shs]
+    eta_l = c["eta_lng"]
+    V = np.array([[s / 100 * gen * 3.6 / 0.45 / 41.868 * 39.683e3 / 0.9 * (p * eta_l - 1.0 - 3.0) / 1e9 for s in shs]
                   for p in price])
     cmap = matplotlib.colors.LinearSegmentedColormap.from_list("g", ["#f1faf6", "#1baf7a", "#0b5a3d"])
     ax.imshow(np.clip(V, 0, None), cmap=cmap, aspect="auto", origin="lower")
@@ -628,16 +636,17 @@ def fig13():
     fig, axes = plt.subplots(1, 2, figsize=(7.2, 3.0), gridspec_kw=dict(width_ratios=[1.15, 1]))
     ax = axes[0]
     rf = c["rent_foregone"]; secs = list(rf.keys())
-    vols = {"Power & water plants": c["gas_power"], "Industry": 10_331.0, "Upstream own use": c["gas_own"]}
+    vols = {"Power & water plants": c["gas_power"], "Industry (fuel & feedstock)": c["gas_industry"],
+            "Upstream own use": c["own"]}
     prices = [6, 10, 14]; w = 0.25; x = np.arange(len(secs))
     for i, (p, col) in enumerate(zip(prices, ["#9cc3ef", C["gas"], "#16508f"])):
-        m = p * c["lng_eta"] - 1.0 - 3.0
-        v = [vols[s] * 39.683e3 * m / 1e9 for s in secs]
+        m = p * c["eta_lng"] - 1.0 - 3.0
+        v = [vols[s] * 39.683e3 / 0.9 * m / 1e9 for s in secs]
         b = ax.bar(x + (i - 1) * w, v, w, color=col, label=f"LNG ${p}/MMBtu")
         vbar_labels(ax, b, v, lambda t: f"{t:.1f}", size=5.9)
     ax.axhline(0.520 * 2.6008, color=C["red"], lw=0.9, ls="--")
-    ax.text(2.45, 0.520 * 2.6008 + 0.12, "Electricity subsidy\n(2025 budget)", fontsize=6.1, color=C["red"], ha="right")
-    ax.set_xticks(x); ax.set_xticklabels(secs, fontsize=7); ax.set_ylabel("USD bn yr$^{-1}$"); ax.set_ylim(0, 5.6)
+    ax.text(-0.45, 0.520 * 2.6008 + 0.1, "Explicit electricity subsidy (2025 budget)", fontsize=6.0, color=C["red"], ha="left")
+    ax.set_xticks(x); ax.set_xticklabels([t.replace(" (", "\n(") for t in secs], fontsize=6.8); ax.set_ylabel("USD bn yr$^{-1}$"); ax.set_ylim(0, 5.6)
     ax.legend(fontsize=6.2, loc="upper right"); ax.grid(axis="x", visible=False)
     ax.set_title("Implicit gas rent transferred, 2025", loc="left"); panel(ax, "a")
 

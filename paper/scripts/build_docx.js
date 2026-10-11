@@ -66,7 +66,7 @@ function makeTable(t) {
   });
   const rows = [new TableRow({ tableHeader: true, children: t.header.map((h, i) => cell(h, i, true, false)) })];
   t.rows.forEach((r, ri) => {
-    const bold = t.boldRows !== false && /^(Total|TPES|TFC)$/.test(r[0]);
+    const bold = t.boldRows !== false && /^(Total|TPES.*|TFC)$/.test(r[0]);
     rows.push(new TableRow({ cantSplit: true, children: r.map((v, i) => cell(v, i, false, ri === t.rows.length - 1, bold)) }));
   });
   return new Table({ width: { size: TABLE_W, type: WidthType.DXA }, columnWidths: widths, rows });
@@ -135,11 +135,11 @@ for (const b of C.body) {
       new TextRun({ text: `\t(${b.n})`, font: FONT, size: SIZE })] }));
   else if (b.type === "table") { ch.push(caption(`Table ${b.n}.`, b.caption)); ch.push(makeTable(b)); ch.push(note(b.note || " ")); }
   else if (b.type === "balance") {
-    ch.push(caption("Table 5.", "Reconciled energy balance of Oman, 2025 (ktoe; central case H1)."));
+    ch.push(caption("Table 5.", "Reconciled energy balance of Oman, 2025 (ktoe, NCV)."));
     ch.push(makeTable({ widths: [2050, 1000, 1000, 1000, 1000, 900, 850, 1050, 1100], fontSize: 16,
       header: ["Flow (ktoe)", "Crude oil", "Refined products", "Natural gas", "LNG", "Coal & lignite", "Solar & wind", "Electricity", "Total"],
       rows: C.balanceRows }));
-    ch.push(note("Negative transformation entries are inputs and positive entries outputs. Crude oil exports are reconciled to refinery intake (Section 2.4.1); natural gas production excludes reinjection. Totals may not sum exactly owing to rounding."));
+    ch.push(note("Negative transformation entries are inputs and positive entries outputs. The crude statistical difference is the gap between recorded crude supply and the refinery intake implied by plant-level output (Section 2.4.1); use-side TPES adds it back. Natural gas production excludes reinjection. Totals may not sum exactly owing to rounding."));
   } else if (b.type === "fig") ch.push(...figure(b.file, b.n, b.caption));
 }
 for (const b of C.backMatter) ch.push(b.type === "h1" ? H(b.text, HeadingLevel.HEADING_2) : P(b.text, { noIndent: true }));

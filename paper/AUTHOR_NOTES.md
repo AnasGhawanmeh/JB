@@ -1,4 +1,6 @@
-# Author notes (revision 2)
+# Author notes (revision 3)
+
+See `RESPONSE_TO_REVIEW_R3.md` for the second-round changes. The response to the first review, `RESPONSE_TO_REVIEW.md`, is kept for the record.
 
 ## What is in this folder
 
@@ -21,7 +23,7 @@ Rebuild everything with: `cd scripts && python model.py && python make_figures.p
    - **Refinery crude intake** by refinery: replaces `eta_ref` and settles H1 versus H2.
    - **Oil-field gas** split into reinjection and fuel: replaces `own_comb_share`.
    - **Power-and-water plant fuel**: replaces `eta_pp`.
-3. **Zenodo.** Upload `data/` together with `scripts/`, then replace `10.5281/zenodo.XXXXXXX` in `scripts/content.js` (Data availability section) and rebuild.
+3. **Data availability.** The manuscript now points to the GitHub repository (`paper/`). Make the repository public, or upload to Zenodo and put the DOI in `scripts/content.js` (`backMatter`).
 4. **Authors.** Fill in the title page and `CITATION.cff`.
 5. **Target journal.** Energy Strategy Reviews. Elsevier accepts any consistent reference style at first submission; the references are in Harvard style.
 

@@ -1,0 +1,700 @@
+﻿id,Name,Sub_zone_N,Source,Schedule,Comments,Cust_Count
+1,Wastiyh_Irbid,East_Kufr_Asad,Kufr_Asad_Wells_1&7_(PS),Saturday_8AM-Tuesday_1PM,This sub-zone is divided in 12 distribution areas_ managed by difrents valves_average 8h fiding each area,843
+2,Wastiyh_Irbid,West_Kufr_Asad,Kufr_Asad_Wells_1&7_(PS),thursday_8PM-Saturday_8AM,This sub-zone is divided in 4 distribution areas_ managed by difrents valves_average 8h fiding each area,795
+3,Wastiyh_Irbid,Saidour,Kufr_Asad_Wells_1&7_(PS),Tuesday_1PM-Thursday_8PM,This sub-zone is devided in 6 distribution areas_ managed by difrents valves_average 8h fiding each area,434
+4,Wastiyh_Irbid,Kharaj,Waslat_Oued_Arab (connection on 800mm from Oued Arab STP),Monday_10AM-Tuesday_12AM,This sub-zone is divided in 5 distribution areas_ managed by difrents valves_average 8h-6h fiding each area,742
+5,Wastiyh_Irbid,Qum,Waslat_Oued_Arab (connection on 800mm from Oued Arab STP),Tuesday_12AM-Wednesday_12AM,from the wadi Arab PS3 there are branch feed this area 150mm from 200 from 800mm to feed this area,1143
+7,Wastiyh_Irbid,Qamim,Waslat_Oued_Arab (connection on 800mm from Oued Arab STP),Monday_8am-Tuesday_12AM,from the wadi Arab PS3 there are branch feed this area 100mm from 200 from 800mm to feed this area,1082
+8,Wastiyh_Irbid,Houfa Wastiyh,Waslat_Oued_Arab (connection on 800mm from Oued Arab STP),Wednesday_1PM-Friday_8AM,from the wadi Arab PS3 there are branch feed this area 100mm from 200 from 800mm to feed this area,495
+9,Wastiyh_Irbid,Kufrain,Waslat_Oued_Arab (connection on 800mm from Oued Arab STP),Saturday_8AM-Saturday_4PM,"from the wadi Arab PS3 there are branch feed this area 100,150,180mm from 200 from 800mm to feed this area",801
+10,Wastiyh_Irbid,Kufryuba_jumaha,Waslat_Oued_Arab (connection on 800mm from Oued Arab STP),Saturday_4PM-Saturday 12PM,from the wadi Arab PS3 there are branch feed this area 150mm from 200 from 800mm to feed this area,603
+11,West-Irbid,Dougara,Dougara wells (07jul~34m3/h),24H/7d,This zone is divided on 15 sub areas - each 8h-12h per turn,1072
+12,West-Irbid,Kufr-Rahtah,Waslat Wadi Arab (800-150),Saturday_12PM-Saturday_11PM,This zone is divided on 4 sub areas - each 6 per turn,208
+13,West-Irbid,Zahar_West,Waslat Wadi Arab (800-150),Saturday_6am-Saturday_11PM,"This area is feeded once the low part of Kufr_Rahtah is closed, the head raise allowing to supply Zahar_West",214
+14,West-Irbid,Jujine,Waslat Wadi Arab (800-150),Monday_8AM-Wednesday_8PM,This area is divided into diffrents sub-areas - each 6h to _8h,726
+15,West-Irbid,Zahar_North,Waslat Wadi Arab (800-150),Monday_8AM-Wednesday_8PM,"This zone is supplied once Jijine is supplied and the operator begins to close the valves, the water level rises allowing Zahra_North to be supplied.",232
+16,West-Irbid,Zahar_South,Waslat Wadi Arab (800-150),Saturday_12AM-Monday_8AM,"This zone is supplied once Kufr-Rahtah is supplied and the operator begins to close the valves, the water level rises allowing Zahra_South to be supplied.",301
+17,West-Irbid,Jamha_Center,Waslat Wadi Arab (800-150),Saturday_8am-Thursday_12AM (except Monday),"This zone is supplied once Zahar and Jujine and Sum is supplied and the operator begins to close the valves, the water level rises allowing Jamha Center to be supplied.",264
+18,West-Irbid,Jamha_low_zone,Waslat Wadi Arab (800-150),Saturday_8am-Thursday_12AM (except Monday),"This zone is supplied once Zahar and Jujine and Sum is supplied and the operator begins to close the valves, the water level rises allowing Jamha Low Zone to be supplied.",293
+19,West-Irbid,Soum,Waslat Wadi Arab (800-150),Wednesday_8PM-Friday_12PM,Supplied via DN250 from Waslat Wadi_Arab 800-150-250,1293
+20,West-Irbid,Jamha_Upper_zone,Waslat Wadi Arab (800-150),Monday_1AM-Monday_2PM,"This zone is supplied once Zahar and Jujine and Sum and Jamha_Low_Zone is supplied and the operator begins to close the valves, the water level rises allowing Jamha high Zone to be supplied.",113
+21,North-Irbid,Assara,Assara wells + Zabda Resv,Friday_6AM-Friday_11PM,Area pressurized from Assara PS - Assara reservoir are feedded from Zabda Reservoir once Foara and Hour are supplied and the operator begins to close the valves,183
+22,North-Irbid,Foara,Foara wells + Zabda Resv,Thursday_3PM-Friday_11PM,"Supplied from Foara well the week day, and from Zabda thursday and friday - splited into sub-zones",666
+23,North-Irbid,Hour,Foara wells + Zabda Resv,Thursday_3PM-Friday_11PM,Exceptionally supplied from Foara well _ otherwise from Zabda Thursday to Friday: splited into sub-zones ~ 6 hours each,418
+24,North-Irbid,Togbuol,Zabda Resv,Thursday_3PM-Friday_11PM,"This zone is supplied once Foara and Hour are supplied and the operator begins to close the valves, the water level rises allowing Togbuol Zone to be supplied.",396
+25,East-Irbid,Huwwara,Zabda Resv (PS : 500 m3/h x 2),Sunday_7AM-Sunday_4PM,one supply zone - Through 180mm + 300 mm pipe,2560
+26,East-Irbid,Huwwara-East,Zabda Resv (PS : 500 m3/h x 2),Sunday_4PM-Monday_1AM,through 400mm pipe,2249
+27,East-Irbid,Alal,Bushra Resv (500 m3) -,Thursday_4PM-Friday_12PM,Sector isolated by valve 16002 - disconnected from the north of Marou network (DN150 not connected),988
+28,East-Irbid,Maru,Bushra Resv (500 m3) -,Friday_12PM-Saturday_12AM,Sector isolated by two valves 291 + 1946,408
+29,East-Irbid,Hakama,Bushra Resv (500 m3) -,1-Tue10PM_thu2PM,1- DN125 DN200 DN150: Bushra in 3 cycles (several valves for sectorization - not digitalized),1803
+30,East-Irbid,Hakama-Bayada,Zabda Resv,Thu_1PM-Thu_11PM,this area feed by gravity from Res by pipe 400mm from Res,622
+31,East-Irbid,Bushra,Bushra Resv (500 m3),Sun_3AM-Tue_4AM,Zone alimenter par le DN200 depuis SP Bushra - zone isolé sur la rourte (ouest) Amman,2555
+32,East-Irbid,Sall,Bushra Resv (500 m3),Fri_12AM-Sun_3AM,alimenter depuis DN200 Bushra PS - 2 resv existants out of services,1306
+33,East-Irbid,Sall-Aliya,Hakama_9_well,Mon_8AM-Tue_12AM,systeme indépendant depuisforage Hakama 9 PS - Le reste du temps Well 9 pompe vers Bushra Resv,96
+34,East-Irbid,Al-Maghayer,Bushra Resv (500 m3),Tue_4AM-Tue_10PM,Alimenter depuis Bushra PS par la conduite DN150 isoler de l'autre partie Est de de la zone sur le DN150 avec une vanne,825
+35,East-Irbid,Al-Maghayer_Zumla,Bushra Resv (500 m3) - Rahoub_PS,Wed_4am-Sat_12AM bushra PS - 24H/7J Rahoub,zone déviser en 4 sous zones - alimenter depuis Bushra PS 3 days et Rahoub PS 24H/7d,1295
+36,Ajloun,Talbiya,Samad Resv (PS),Tue_5am-Tue_9AM,"Tout les 2 semaine alimenter par le DN150 (vanne 371) , le DN100 qui retourne en arriere est fermé (vanne 186)",62
+37,Ajloun,Bir_Dalia,Samad Resv (PS),Tue_9am-Tue_2pm,Tout les 2 semaine zone moyenne elevation de la zone une fois la zone basse fermé celle la est alimentée (vanne 368),70
+38,Ajloun,Sanaar,Samad Resv (PS),Tue_2PM-Tue_8PM,"Tout les 2 semaine Zone haute, plus large, alimenter une fois les zones basses alimenté (vanne 7041)",329
+39,Ajloun,Samta,Samad Resv (PS),Tue_8pm-Wed_2am,"Tout les 2 semaine zone alimentée par le DN100 depuis DN400, vanne non digi proche 347",165
+40,Ajloun,Afana,Samad Resv (PS),Tue_8PM-Wed_4AM,Tout les 2 semaine : large zone,353
+41,Ajloun,South_Sakhra,Samad Resv (PS),Wed_4am-Wed_8PM,La zone est divisée en plusieurs sous zone a travers des vannes interne - alimentée par le DN200 depuis 400 Samad,901
+42,Ajloun,Middle_Sakhra,Samad Resv (PS),Wed_8PM-Thu_11AM,"La zone est interconnectée avec la zone basse et haute a travers plusieurs vannes, les canas DN100 sud-Nord sont isolées par des vannes",529
+43,Ajloun,North_Sakhra,Ras_Monif_Res (PS),Thu_11am-Fri_3am,alimentée depuis Ras-Monif par pompage avec DN200 - Isolée de JArash par la vanne id=343 - la zone est divisée en 2 zones,616
+44,Ajloun,Muthalathat,Samad Resv (PS),Sat_3AM-Sat_3PM,zone alimentée par le DN100 depuis le DN400 a partir de Samad Resv,719
+45,Ajloun,Abine_Center,Samad Resv (PS),Fri_3AM-Sat_3AM,Zone large découpée en 3 sous zones alimenter depuis le DN400 depuis Samad,2126
+46,Al-Mafraq,Nasriya,Za'tary,Sat_10AM-Sat_10PM,Alimentée depuis PS Za'tary DN150 - Theorique 24h mais réel 12h - GIS non a jour - la zone est alimentée depuis PS Za'Tary DN150,83
+47,Al-Mafraq,Manshiyyet Essoltah,Za'tary,Tue_10AM-Tue_10PM,Alimentée depuis PS Za'tary DN150 avec zone 46 - Theorique 24h mais réel 12h - GIS non a jour - la zone est alimentée depuis PS Za'Tary DN150,303
+48,Al-Mafraq,Al_Fawaraa,Za'tary,Mon_10AM-Mon_10PM,Alimentée DN150 nouveau depuis PS Za'Tary,185
+49,Al-Mafraq,Za'Tary-west,Za'tary,Mon_10AM-Mon_10PM,Alimentée depuis Za'tary PS DN200 - Theoriquement 24h,590
+50,Al-Mafraq,Za'Tary-East,Za'tary,Wed_10am-Wed_10PM,Alimentée depuis Za'tary PS DN200 alimente Zone 50 également - Theoriquement 24h- des vannes de part et d'autre de la route,365
+51,Al-Mafraq,Sheikh_Nada,Za'tary,Tue_10am_Tue_10PM,Alimentée par un piquage DN125 sur le DN400 depuisZa'Tary PS - Theoriquement 24h,115
+52,Al-Mafraq,Abu-Hayal,Za'tary,Wed_10am-Wed_10pm,Alimentée par DN300 en piquage sur la DN400 -,250
+53,Al-Mafraq,Thagret_Al_Job,Za'tary + local well,Wed_10AM-Fri_10PM,Alimentée par 2 sources (Za'Tary et puit local) _ divisée en 3 sous zone,520
+54,Al-Mafraq,Bweidha_Gharbiyeh,Bweidha_Resv_PS,Tue_8AM_Tue_4PM,alimentée par DN100 (ref) depuis Bweidha PS,95
+55,Al-Mafraq,Bweidha_Oleimath,Bweidha_Resv_PS,Mon_4PM-Tue_6AM,Alimentée par DN100 depuis Resv-Bweidha (Ref) + DN150 piqué sur le DN300 depuis Bweidha (by pass le Resv Bouidha- pression residuaire 1bar),261
+56,Al-Mafraq,Abu_Khalaf,Bweidha_Resv_PS,Sat_8am-Sat_8PM,Alimentée par le DN300 (by pass le Resv Bouidha- pression residuaire 1bar) depuis Resv/PS Bweidha,36
+57,Al-Mafraq,sahah,Bweidha_Resv_PS,Mon_11AM-Mon_11PM,Alimentée par le DN300 (by pass le Resv Bouidha- pression residuaire 1bar) depuis Resv/PS Bweidha,88
+58,Al-Mafraq,RHAb,Bweidha_Resv_PS,Tue_6PM-Thu_6AM,2 x 200 piquées sur DN300 (by pass le Resv Bouidha- pression residuaire 1bar) - 12 vannes qui repartissent la zone en 6-8 h chaque zone,1100
+59,Al-Mafraq,Al_Qadam,Bweidha_Resv_PS,Wed_4pm-Thu_6am,Alimentée par DN100 piquée sur le DN300 (by pass le Resv Bouidha- pression residuaire 1bar) - HS,80
+60,Al-Mafraq,Ein_Bani_Hassan,Bweidha_Resv_PS,Sun_10am-Mon_6am,"Zone alimentée par un piquage DN200 a cote du resv Qadam (SIG non à jour, DN300 DN150 ne continue pas vers le sud apres Resv Qadam)-SIG update DN200 depuis Resv Qadam jusqu'a Maamaria",397
+61,Al-Mafraq,Mamarieyh,Bweidha_Resv_PS,Sat_8pm-Sun_6am,"Zone alimentée par un piquage DN200 a cote du resv Qadam (SIG non à jour, DN300 DN150 ne continue pas vers le sud apres Resv Qadam)-SIG update DN200 depuis Resv Qadam jusqu'a Maamaria",168
+62,Al-Mafraq,Hamamt_Omoush,Bweidha_Resv_PS,Sat_6PM-Sun_6AM,Alientée par DN100 (ancien réseau) depuis DN150 (nouveau réseau) l'ancien réseau est maintenu pour distri -DN150 piquée sur DN300 - pas de branchement sur DN150,130
+63,Al-Mafraq,Hamamt-Monkhadat,Bweidha_Resv_PS,Mon_8PM-Tue_6am,Alientée par DN100 (ancien réseau) depuis DN150 (nouveau réseau) l'ancien réseau est maintenu pour distri -DN150 piquée sur DN300 - pas de branchement sur DN150,37
+64,Al-Mafraq,Hamamt-Alimat,Bweidha_Resv_PS,Wed_6pm-Thu_6am,Alimentée par DN125 piquage sur DN150 - sur le DN300 bypass SP_Resv Bouidha,70
+65,Al-Mafraq,Dogmosseh,Bweidha_Resv_PS,Sun_8am-Sun_4pm,Supplied by DN125 from DN150 (4 hours pressure-boosted from Daqmaseh PS for high points),129
+66,Al-Mafraq,Nadrah,Bweidha_Resv_PS,Sun_10pm-Mon_10am,Supplied by DN100 from DN150 (4 hours pressure-boosted from PS Dogmosseh for high points),98
+67,Al-Mafraq,Um_Butaimah,Bweidha_Resv_PS,Mon_10pm-Tue_8PM,Divided into 4 sub-zones - 6 hours each zone - pressure-boosted from SP Dogmosseh,223
+68,Al-Mafraq,Hweishan,Bweidha_Resv_PS,Sat_8AM-Sat_8PM,Boosted/Pressurized from SP Dogmosseh,56
+69,Al-Mafraq,Ein AL Nabi,Bweidha_Resv_PS,Fri_8am-Sat_8am,Boosted/Pressurized from SP Dogmosseh,122
+70,Al-Mafraq,Medwar,Bweidha_Resv_PS,Tue_8pm-Wed_6am,Supplied by DN100 - GIS not up to date - DN100 continues towards the south (not DN125),68
+71,Al-Mafraq,Khatla,Al-Qnaya_PS,Wed_8PM-Thu_6am,Supplied from Al_Qnaya PS - DN150 discharge line then DN100,47
+72,Al-Mafraq,Dahal,Al-Qnaya_PS,Wed_8AM_Thu_6am,Supplied from Al_Qnaya PS - DN150 discharge line then DN100,141
+73,Al-Mafraq,Hmaid,Al-Qnaya_PS,Mon_8am-Tue_8am,Supplied from Al_Qnaya PS via DN100 - divided into sub-zones 6 hours each,146
+74,Al-Mafraq,Marajem,Al-Qnaya_PS,Tue_8am-Wed_6AM,Supplied from Al_Qnaya PS via DN100,73
+75,Al-Mafraq,Fa'a,El lulu_resv,Fri_8am-Sat_8am,from Resv El Lulu (grav) DN200 then DN150 - divided into sub-zone 6h per sub-zone,381
+76,Al-Mafraq,Hosha,El lulu_resv-Booster_Hosha,Sun_8am-Tue_1am,Supplied from Resv Um Lulu by DN200 gravity line until the Hosha booster then by discharge line - zone divided into sub-zones - 6 to 8 hours each zone,339
+77,Al-Mafraq,Harsh,El lulu_resv,Sun_8am-Mon_8am,Supplied from Resv Um Lulu by DN200 gravity line  - shift of : 6 to 8 hours on sun to mon,326
+78,Al-Mafraq,Braiqa,El lulu_resv,Sun_8am-Mon_8am,Supplied from Resv Um Lulu by DN200 gravity line  - shift of : 6 to 8 hours on sun to mon,128
+79,Al-Mafraq,Um Zaaroura,El lulu_resv,Sun_8am-Mon_8am,Supplied from Resv Um Lulu by DN200 gravity line  - shift of : 6 to 8 hours on sun to mon,27
+80,Al-Mafraq,Um_Lulu_Prison,El lulu_resv_Grav,24H/7j,Supplied 24/7 by gravity via DN100 from Um_Lulu Resv - Prison and gendarmerie,2
+81,Al-Mafraq,Um_Lulu_VILLAGE,El lulu_resv_PS,Tue_8am-Tue_8PM + Thu_8am-Thu_8PM,Supplied by discharge line via DN100 from Resv Um_Lulu_PS - GIS not updated missing the DN100 discharge line from Um_Lulu to village,134
+82,Al-Mafraq,Hay_Malahem,El lulu_resv_PS,Fri_4PM-Sat_12AM,Supplied by DN200 discharge line from Resv_Um_Lulu - several valves operated for this zone,162
+83,Al-Mafraq,Hay_Gharbi_Mansiyyah,El lulu_resv_PS,Thu_8am-Thu_8PM,Supplied by DN200 discharge line from Resv_Um_Lulu - several valves operated for this zone,637
+84,Al-Mafraq,Eskan_Mansiyyah,El lulu_resv_PS,Fri_6PM-Sat_6am,Supplied by DN200 discharge line from Resv_Um_Lulu - several valves operated for this zone,63
+85,Al-Mafraq,Hay_Nadi,El lulu_resv_PS,Mon_8AM-Mon_4PM,Supplied by DN200 discharge line from Resv_Um_Lulu - several valves operated for this zone,312
+86,Al-Mafraq,Hay_Sharqi_Mansiyyah,El lulu_resv_PS,Thu_8pm-Fri_8AM,Supplied by DN200 discharge line from Resv_Um_Lulu - several valves operated for this zone,571
+87,Al-Mafraq,Rajem_Sabe,El lulu_resv_PS,Sat_8am-Sat_4pm,Supplied by DN200 then DN100 discharge line from Resv_Um_Lulu - several valves operated for this zone,122
+88,Al-Mafraq,Tayeb_Esem,El lulu_resv_PS,Sat_8am-Sun_12am,Supplied by DN200 then DN125 discharge line from Resv_Um_Lulu - several valves operated for this zone,107
+89,Al-Mafraq,Kazeyat_Wazen,El lulu_resv_PS,Sat_4PM-Sun_12AM,Supplied by DN200 then DN150 discharge line from Resv_Um_Lulu - several valves operated for this zone,41
+90,Al-Mafraq,MONKHAFADAT UM NAAM GHARBIYYEH,El lulu_resv_PS,Mon_4PM-Tue_6AM,Supplied by DN200 discharge line from Resv_Um_Lulu - several valves operated for this zone,61
+91,Al-Mafraq,UM NAAM GHARBIYYEH MORTAFAAT,El lulu_resv_PS,Tue_6AM-Tue_5PM,Supplied by DN200 discharge line from Resv_Um_Lulu - several valves operated for this zone,233
+93,Al-Mafraq,UM NAAM Shargiya,El lulu_resv_PS,Fri_8am-Fri_5PM,Supplied by DN200 the DN125 discharge line from Resv_Um_Lulu - several valves operated for this zone,355
+94,Al-Mafraq,Bwaidet_Hawamdeh,El lulu_resv_PS,Fri_5PM_Sat_1AM,Supplied by DN200 then 2 X DN150 discharge line from Resv_Um_Lulu - several valves operated for this zone,440
+95,Al-Mafraq,Noor_Hamza,El lulu_resv_PS,Tue_6PM-Thu_12AM,Supplied by DN200 then 2 X DN150 then DN100 discharge line from Resv_Um_Lulu - several valves operated for this zone,379
+96,Al-Mafraq,Al_Hachemy_Gharbi,Hayyan_Booster,Sat_7am-Sat_7PM,Supplied from Hayyan booster DN200 - (connection on DN400 from Sumayya PS) - Valve on DN150 and DN100,660
+97,Al-Mafraq,Al_Hachemy_Gharbi_Mortafaat,Hayyan_Booster,Sat_7PM-Sun_7AM,Supplied from Hayyan booster DN200 - (connection on DN400 from Sumayya PS) - several valves operated for this zone - DN180 trasmission on the first part,953
+98,Al-Mafraq,Al-hachemi_Charqi,Hayyan_Booster,Sun_7am-Mon_7am,Supplied from Hayyan booster DN200 - (connection on DN400 from Sumayya PS) - several valves operated for this zone - zone divided into sub-zones - 6 to 8 hours each zone,993
+99,Al-Mafraq,Aidoun_Bani_Hassan,Hayyan_Booster,Mon_7am-Tue_7am,Supplied from Hayyan booster DN200 - (connection on DN400 from Sumayya PS) - several valves operated for this zone - zone divided into sub-zones - 6 to 8 hours each zone,498
+100,Al-Mafraq,Hayan_Meshref,Hayyan_Booster,Tue_7am-Tue_9pm,Supplied from Hayyan booster DN200 to the south - DN150 out off service - update GIS,203
+101,Al-Mafraq,Ghadeer,Za'tary,Sat_7am-Sun_7am,Supplied by DN200 connected from DN400 from Za'tary (discharge line) next to Hayan PS,426
+102,Al-Mafraq,Hay_Kwaytiyeh,Za'tary,Sun_7am-Tue_7am,Supplied by DN100 connected from DN400 from Za'tary (discharge line) next to Hayan PS - some connection are on the DN400 from za'tary (end point of network) - Important connections on the DN400 before reaching the Hayan PS area (high flow),308
+300,Taybeh,Bayat_Yafaa,Kufr_Yuba,Sun_11am-Thu_11PM,Supplied by the DN150 from Kufr-Yuba PS (wells),1166
+301,Taybeh,West_Bayat_Yafaa,Kufr_Yuba,Thu_11PM-Sun_11AM,Supplied by the DN150 from Kufr-Yuba PS (wells),554
+302,Taybeh,North_Dier_Sanya,Waslat_Wadi_Arab (800-100),Thu_8PM-Fri_1pm,Supplied by DN100 from DN800 (Wadi-Arab PS3) - (SIG to update) - no DN200 in place DN150 from DN100 from DN800 - divided into sub-zones,602
+303,Taybeh,South_Dier_Sanya,Waslat_Wadi_Arab (800-100),Fri_1PM-Sun_8AM,Supplied by DN100 from DN800 (Wadi-Arab PS3) - DN100 branch towards the south - from DN800 Wadi Arab -,261
+304,Taybeh,Al_Tayba_Absara_Abou_Ali,Waslat_Wadi_Arab (800-100),Sun_8am-Thu_8PM,Supplied by the DN100 extension towards the west - the DN100 ends at its extrémity - no DN200 pipeline on the GIS,667
+305,Taybeh,Samaa,Mandah well 1+3 + Al_Tayba Well,Sun_8am-Thu_8am,Zone supplied by Mandah (3 + 1) via DN200 - DN200 up to near Al-Tayybeh PS - DN200 divides into 2xDN100 + DN150 - one rotation for each line DN100+DN150 (other DN100 for 207) - GIS not updated,2078
+306,Taybeh,Mekheraba,Mandah well 1+3 + Al_Tayba Well,Sat_8am-Sun_8am,Zone supplied by Mandah (3 + 1) via DN200 - DN200 up to NEAR Al-Tayybeh PS - DN200 divides into DN100 - GIS not updated,275
+307,Taybeh,Mandah,Mandah well 4,Thu_8am-Sat_8am,The zone is supplied by Mandah well 4 - Via DN100 - disconnected at its end from the Al_Tayba zone - divided insupply zone - 6 to 8 h for each zone,275
+308,Taybeh,West_El_Tayba,Mandah well 4,Sat_8am-Thu_8am,The zone is supplied by Mandah well 4 - Via DN100 - disconnected at its end from the Al_Tayba zone - divided insupply zone - 6 to 8 h for each zone,470
+309,Taybeh,Center_El_Tayba,Mandah well 1+3,Thu_8am-Sat_8am,Zone supplied by Mandah (3 + 1) via DN200 - DN200 to the East up to Al-Tayba center - GIS not updated,1854
+310,Al_Mazare,Deir_Yusuf,Juhfiyya wells (PS),Thu_11PM-Sat_11am,supplied from Well Juhffiya via DN150 - DN150 from Juhffiya PS - DN150 divided into 3 sections - 1st section,1328
+311,Al_Mazare,Al_mazare,Juhfiyya wells (PS),Sat_11am-Tue_7am,supplied from Well Juhffiya via DN150 - DN150 from Juhffiya PS - DN150 divided into 3 sections - 2 section,1238
+312,Al_Mazare,Anaba,Juhfiyya wells (PS),Tue_7am-Thu_11PM,supplied from Well Juhffiya via DN150 - DN150 from Juhffiya PS - DN150 divided into 3 sections - 3 section,1486
+313,Al_Mazare,Hay_Thaher,Samad_PS,Sun_4PM-Mon_10am,DN100 distribution - DN150 transfert then distribution,995
+314,Al_Mazare,Samad,Samad_PS,Fri_8am-Fri_4pm,Supplied by DN150 from Samad_PS,227
+315,Al_Mazare,Arahaba,Samad_PS,Tue_4pm-Thu_10pm,Supplied by DN150 pipe connected on the DN300 comming from Samad_PS,1375
+316,Al_Mazare,Zoubiya,Samad_PS,Sun_4pm-Tue_4pm,Supplied by DN150 (same 215) pipe connected on the DN300 comming from Samad_PS,650
+317,Al_Mazare,Juhfiyya_Habaka_Hofa,Hofa_PS,Sun_12pm-Tue_10am,Supplied by DN150 from Hofa_PS - The DN150 supply this area only -  GIS to update (NO DN200 out off service),2090
+318,Al_Mazare,Natfah,Juhfiyya wells (PS),Sat_8am-Sun_2pm,Supplied by DN150 from Juhfiyya_PS (east outlet) - transmission on the first section then distribution,692
+319,Al_Mazare,Kufr_Yuba,Juhfiyya wells (PS),Sun_2pm-Sat_8am,Supplied by DN150 from Juhfiyya_PS (east outlet) - 2sd section of the DN150 pipe (same for the distribution zone 218),2139
+182,Irbid-Obeid,behind the Almarkiz alsihi and almasih north,Zabda,tusday 2pm to 11pm,from 300 from 400 from 600 andfrom 300 branches,726
+181,Irbid-Obeid,area almasrab and sharq alkansa and dowar sareeh,Hofa gravity & Zabda pumping,tusday 8Am to 1pm,for this area there are mix between hofa and zabda sourse because if we open just one sourse we can't feed this total area so they mix to water to feed the area in the time determine the line from zabda from line 300 from 600 zabda hofa 300 from 600,1732
+180,Irbid-Obeid,dowar alalam and prikah and almasieh,Hofa gravity,tusday 1pm to wensday 4am,from hofa 300 from 600 ES,2037
+179,Irbid-Obeid,Patra street,Zabda,tusday 11am to 5pm,"from 600 zabda 400 to 300 there are two pipes 150, 100 to feed this area ES",558
+178,Irbid-Obeid,Abu Rashed street,zabda,tusday 8am to 2pm,600mm from zabda 400to sareih and ruduced to 200 and there another line from 400 180 pothaline WE,404
+177,Irbid-Obeid,Hospital,hofa,24h every day,line 100mm from 200 hofa,4
+176,Irbid-Obeid,Aydun almojauron,Hofa,sunday 8am to 8pm,from hospital line 100mm from 200 mm and the line enter for this area is 50mm,229
+175,Irbid-Obeid,area of alwaqiph,hofa,friday 8am to 8pm,the same of the hospital line from hofa 200 reduction to 100 to feed this area,290
+174,Irbid-Obeid,behind the hospital,Hofa gravity,wensday 8am to 6pm,from 200mm direct from hofa and it reduction to be 125 to feed this area,176
+173,Irbid-Obeid,Dooar batata,Zabda pumping,friday 11am to 4pm,300 mm branches from 600 jika,764
+172,Irbid-Obeid,area MK,Zabda pumping,tusday 12pm to 6pm,from 600mm zabda jika it reduced to 300mm in North mid,2337
+171,Irbid-Obeid,qern aljamous,Hofa gravity,monday 5am to 9am,the sourse for this area from two pipes the first one 150mm Eest mid and 100 south from 400mm hofa,764
+170,Irbid-Obeid,dewan abudalu,hofa,sun 5pm to 10pm,this area feed by two pipes from hofa the first one 100 and 100 in SW from 400mm hofa,327
+169,Irbid-Obeid,Aydon- bank alaskan,hofa gravity,sat 12 pm to 4 am sun,from 100 from 150 from 350 hofa pipe NW,371
+168,Irbid-Obeid,Moqabel Masjed Alameen,Hofa gravity,sat from 8pm to 4 am sun,from 50 steel from 200 from 350 hofa in NE,354
+167,Irbid-Obeid,Masjed Abu Dalue,Hofa gravity,sun 10 am to mond 5 am,from 100mm taked 150 from 350mm hofa pipe,407
+166,Irbid-Obeid,Alhajawi Irbid-Amman street,hofa gravity,sun 10pm to 5Am monday,from 350 hofa pipe dring pipes branches 200mm NW,1413
+165,Irbid-Obeid,Alhajawi alaali,hofa gravity,sun 5pm to 10pm,from 100mm and taked from 200mm and it taked from 350 mm hofa pip the last location for NW,284
+164,Irbid-Obeid,Aydon kalf masjed alamen,hofa gravity,sun 5pm to 10pm,from 50mm from 350 hofa south,127
+163,Irbid-Obeid,tloa alia,hofa gravity,sun 5pm to 10pm,from 350mm hofa there are branch 100 feed this area north east,434
+162,Irbid-Obeid,Qaser alawadeen,hofa gravity,sun 12pm to 5pm,from 350mm hofa south kalf al baladeh,1419
+161,Irbid-Obeid,Qarb janoob doaar ala'eadat,Hofa grivity,form 4Am sun to 12pm,from the 350 mme hofa direct come direct from hofa,999
+160,Irbid-Obeid,Sharq shmal doaar ala'iadat,Hofa gravity,sat 10 am to 4am friday,pipe 200 hofa the same abve area north and it taked from the 350mm,703
+159,Irbid-Obeid,alhadeqa aydaon,Hofa gravity,sat 11am to 4am sunday,from 200mm take from 350pipe line of hofa pipe line,673
+158,Irbid-Obeid,sharq janob doaar al'iadat,hofa grivity,sat 10am to 4am friday,from 200mm hofa branched from 350,576
+157,Irbid-Obeid,Alhmoud,Hofa gravity,sat 11am 1am sun,start from hofa 400mmbut in gis 350mm and reduction to 200mm qarb doaar abo shamsi,1461
+156,Irbid-Obeid,sharq doaar abu shamsi,zabda,sat1am to 11am,this area feeded from 200mm pipe during to branches and this are feeded by refering the water after feeded sharq  obaid,133
+155,Irbid-Obeid,area between doaar alusfi and alrazi,Zabda,Sat11Am to sun1Am,from 200mm pipe north,1133
+154,Irbid-Obeid,Mostashfa alrahibat,zabda,satarday 1am to 11am,"from the 200mm pipe of zabda through three branches 100, 50 , 50 from 200 mm pipe",140
+153,Irbid-Obeid,Mojamaa Amman aljaded,zabda,friday 18hr from 8Am,the source of the  water for this area from pipe 200mm from zabda in the ysfee circle and feed this area durng the branches,1274
+152,Irbid-Obeid,Yarmouk University,Zabda,satarday 24hr,new pipe 100mm dictile from 200mm zabda pipe to feed the YU,35
+151,Irbid-Obeid,doar alwazem or mostashfa altakasosi,Zabda,satarday 1Am to 11Am,the source of of the water from 200mm from zabda in alawaazem circle,2060
+150,Irbid-Obeid,Aydun-tagarb,zabda - pumping,thursday 12 night to 8Am friday,the water from pipe 350 form duar sohara and from branches feed this area and there valve on the main pipe for this area,1267
+149,Al-Mafraq,Rbaa sarhaan,sumaya ps,friday 10pm to sat 10pm,the two pipe line 100 mm continue form the sumaya arae,219
+148,Al-Mafraq,Smayya shariyyeh and Gharbiyyeh and skan,sumya ps,friday 8Am to 8Pm,throgh to pipe line from sumaya ps 150mm and 100mm and the 150 continough through 100,80
+147,Al-Mafraq,"Zumlah , Madrasah askarieeh",Poster Sama,thursday 5Am to 12 night,line 100 mm from the poster Sama 3 through Sama to reach the sumlah and madrasah alaskarieh,118
+146,Al-Mafraq,Mansorah,sumaya PS,thursday 10pm to 3pm friday  and from sun 2Am to 8 am,this area suppurted from pjipe 150 mme main pipe that continue from the Matallah area and the time is sepreated becuase the Matallah takes some of the time in friday,558
+145,Al-Mafraq,Matallah,sumay Ps,friday 3pm to 12 night,this area feeded direclty form sumya ps through pipe 150 mm,209
+144,Al-Mafraq,Sama HAY ALJANOBI ALQARBI HAY ALMGASHA,Poster Sama Ps 3,monday 9Am to 12 night,this area supported from 150mm main  pipe from poster,239
+143,Al-Mafraq,Sama hay almaqfar and hay slimy,Poster sun,sun 24hr,this arae supported from pipe line 150mm from the poster sama 3,248
+142,Al-Mafraq,hay sharqi shouth Sama,Poster Sama 3,sat 2pm to 2am sun,this area supported from main pipe line 150 from the poster 3,222
+141,Al-Mafraq,Alsharqi alshamali SMA ALSARHAN,Poster Sama,from 12 night  friday to 2pm sat,this area supplaied from the poster Sama poster 3 and 150 from poster to Sama area and there are not in Gis the pipe is 180 but the opereater 150,158
+140,Al-Mafraq,Harfusheh,Jaber ps,tusday 7Am to 11Pm,"from the pipe line 150 from Jaber during the breanches 125,32,125 to feed the Harfusheh area",77
+139,Al-Mafraq,Al-Hudud jaber,Jaber,Wensday 5am to thursday 5Am,this area supported from pipe 100 from Jaber ps and feed alhudud and this pipe feed the reservor and from reservor to network Hudud,12
+138,Al-Mafraq,Awwal tareeq alhora,Jaber ps,thursday 8am to 9pm,the pranch supplay with alkarakeyh by pipe 63 from 150,3
+137,Al-Mafraq,Alkarakeyh,Jaber PS,thursday 8Am to 9Pm,100mm from 150 jaber main and feed all alkaraheyh from the 100 branch,16
+136,Al-Mafraq,Jaber albald,Jaber ps,monday 6Am to 11Pm,the sourse of the water from the ps jaber staion and from the pipe 150 mm and threre are another pipe line from main pipe 150 pipe 63 for horaa area,318
+135,Al-Mafraq,Hamra ALQASMIA,SWELMA PS,Mon  8Am to sun 8 Pm,from the main pipe 150mm from the SWWELMA PS,21
+134,Al-Mafraq,ALHAMRA DANADNIYYEH,SWELMA PS,SUN 8Am to sun 8 Pm,from the main pipe 150mm from the SWWELMA PS,85
+133,Al-Mafraq,Hamra Tareeq Matallah,SWELMA PS,Thursday 8Pm to friday 8Am,this area is extend for the area netwok and it get the water from the branches getting from the other network take the water from 150mm to 125 mm from SWELMA PS,92
+132,Al-Mafraq,AL HAMRA TAREEQ MGHAYYER+HAY ALJAMEEH,SWELMA PS,THursday 8Am to 8Pm,from Swelma PS 150mm pipe there branches from it 125 and  less feed the area takes frome the main pipes 150,147
+131,Al-Mafraq,HAY GHARBI,SWELMA PS,WENSDAY 24hr,from Swelma PS 150mm pipe there pipes branches feed the area,282
+130,Al-Mafraq,HAY ALKHZAM ALHAMRA,SWELMA PS,TUSDAY 24 hr,from Swelma PS 150mm pipe there area branches from it 125 and  less feed the area,222
+129,Al-Mafraq,AL HAMRA HAY ADLAJEM,SWELMA PS,Monday 24Hr,from Swelma PS 150mm pipe there area branches from it 125 and  less feed the area,261
+128,Al-Mafraq,AL HAMRA HAY ALJANOBI,SWELMA PS,SUN 24Hr,from Swelma PS 150mm pipe there area branches from it 100 feed the area note the area is network and it control from the close and open the valve with Neighboring areas,216
+127,Al-Mafraq,AL HAMRAA TARIQ ALMANSOURA,SWELMA PS,SAT 8PM TO 8 AM SUN,"from Swelma PS 150mm pipe there area branches from it 125 and 100, and less feed the area",120
+126,Al-Mafraq,HAMRA HAY MARKEZ SEHHI,SWELMA PS,SAT 12hr,from Swelma PS 150mm pipe there area branches from it 125 feed the Hamar hay markez ....,114
+125,Al-Mafraq,AKAIDER QARBI,MSHAIRFEH PS,Monday 24Hr,100mm continue from the Akaider wasat to feed the ADAIDER QARBI Area,61
+124,Al-Mafraq,AKAIDER WASAT,MSHAIRFEH PS,SUN 24 Hr,from Mshairfeh PS there are pipes 125 and it reachd to Akaider wasat  and it ruduction to 100 mm to feed the area,124
+123,Al-Mafraq,AKAIDER SHARQI,MUSHERIFEH PS,SAT 24Hr,125 mm from Musherifeh ps feed the area,6
+122,Al-Mafraq,MSHAIRFEH,MUSHERIFEH PS,FRIDAY,same of area there area PS Musherifeh feed the area from pipes 125mm,23
+121,Al-Mafraq,Swelmeh,SWELMEH PS,FRIDAY 24H,from swelmeh ps there area pipe 150mm feed the area,206
+120,Al-Mafraq,"HAY ALZHOR SHARQI , SHARI ALMOHNDISIN",Sumaya,wensday and thersday 48hr,direct from 400 pipe sumaya ps to 200 and there are branches 150 feed the area,1777
+119,Al-Mafraq,"HAY NOWWARA , HAY MAQAM , HAY ALHOSBAN , HAY ALZHOR QARBI, SHARI ALMOHNDISIN",Sumaya,sat -sun 48hr,from sumaya 400 to 500 and there arae branches 150 and 125 feed the area,1002
+118,Mefraq,Hay AL HUSSEIN AND HAY FDAIN AND  PART OF HAY ALTHOBAT AND HAY JEA'A,Sumaya,Monday and tuesday 48hr,from sumay pipe 400mm to 500 mm and there pipes  branches 150 and 125 from 150 feed the area,3077
+117,Al-Mafraq,HAY JANOOBI AND DAHEYT KING ABDULLAH AND ESKAN,Sumaya,Thursday and Friday 48h,from sumay pipe 400mm ruduction to 200 mm that feed the area and there pipes branches 150 and 125 from 150 feed the area,6098
+116,Al-Mafraq,SOOQ HAY THOBBAT AND STREET OF JAISH,Summay PS,Wednesday 24,from sumaya pipe 200mm direct from sumaya ps there reduction to 150 and from 150 there are branches 125 feed the area,2646
+115,Al-Mafraq,Hay sharei Raeesi Sooq,Sumaya,Wednesday 8pm to 8Am thursday,there are line under the area 150mm is not used from Jaber ps,227
+114,Al-Mafraq,Hay Hayat Raffan,Sumaya PS,wensday 12h,from sumaya pipe 200 mm  there are reduction to 150 and there are breanch 125 feed the area,113
+113,Mefraq,Markez sehhi qadeem,Sumaya ps,sunday 24h,from sumaya pipe 200mm direct from sumaya ps and from 200 there are branches 150 and 125 and less feed the area take it from 200mm,321
+112,Mefraq,Hay ood Ewayyed,Sumaya,tusday 24h,from sumaya pipe 200mm direct from sumaya ps and from 200 there are branches 125 and less feed the area,408
+111,Mefraq,Hay Al ArQoob,Sumaya,monday 24hr,from sumaya pipe 200mm direct from sumaya ps there reduction to 150 and from 150 there are branches 125 feed the area Hay Alarqoob,304
+110,Mefraq,Manshiyyet Kaiber,sumaya Ps,thersday 9Am to 9Pm,"sumay 200mm Magear alsarhan and there area two pipe line 125 , 100 for the Manshiyyet Kaiber",118
+236,North shouna,almarqes alseehi alshona line 110,al adaseeh poster,2 sat to 2am sun,this area can feed from two way from poster aladseeh and from Res. moa'th,493
+235,North shouna,escan almedraj,al adaseeh poster,2am friday to 2pm sat,this area feed by pipe 100 from 150 pumpng from PS,443
+234,North shouna,albaqura and almsharqa,aladaseeh poster,thursday 12om to 2am friday,this area feed by pipe 100 from 150 pumpng from PS,152
+233,North shouna,aladaseeh,poster al-adasyyeh,wensday 8am to thursday 12 pm,this area feed by pipe 100 from 150 pumpng from PS,461
+232,this area with balqa with meahuna,alkasara - mothalth kufranja,rajeb Res from meahuna,,"this area feed by pumping through pipe 150 from AL-Mkaymenat
+PS Res.",155
+231,North shouna,Krima aljanobia,Krima Res,wensday 32hr,the time for krima Res. is 8day to 9 day not weeklay,452
+230,North shouna,sooq krima,"mkamlat 4,5 pumping",sunday to tusday 48hr,"this area feed by pumping through pipe 125 from 150 from AL-Mkaymenat
+PS Res.",38
+229,North shouna,Krima albalad,Krima Res.,from monday 7pm to 7pm tusday,"this area feed by pumping through pipe 150 from AL-Mkaymenat
+PS Res.",537
+228,North shouna,scan krima +hay almoasasa,"from mkamlat PS 4,5 pumping",tusday 5pm to 7am sunday,feed area by area and feed the lower area and give the upper area and the amount of the water is 40m/hr,716
+227,North shouna,shofara,krima Res pumping,sun 7pm to 7pm monday,"this area feed by pumping through pipe 100 from 150 from AL-Mkaymenat
+PS Res.",420
+226,North shouna,abo sedo south,krima Res pumping,thursday 7pm to 7pm sunday,"this area feed by three breanches from 150 there are 100,125,100 to feed this area",838
+225,North shouna,abo sedo alshmali + quba,kriema Res pumping,tusday 7pm to 7am thursday,from Kriema 200mm main there are branches,243
+224,North shouna,slekat,well slekat,from thursday and friday,direct from the well8 to network,73
+223,North shouna,al quran,kraima resv pumping,thursday 7am to 9pm,the water supplay by the pipe 200 from the south to north,89
+222,North shouna,abo habeel + karba balash,spairah well1,sat 7am to tusday,the water is supplay from spairah well 1 and give the south area from the lower area to uper area feed the go to north,216
+221,North shouna,Wadi alriaan and alskan alshabi,Tabqet fahel Res Gravity,tusday 8am to 1 am in wensday,"feed by 200 and there are breanches from it to feed the area 200,63,100 to low elevtaion",729
+220,North shouna,"Wadi alrian and almaraza , hay alhmisat",Tabqet fahel Res Gravity,monday 8am to 5pm,from 200 there are branches to feed tha area and it feed start with low elev to high elevation,451
+219,North shouna,Al mashari alsharqi,Tabqet fahel Res Gravity,thursday from 8am to 2 am friday,from 200 starte with low elvation to high elevation by branches,975
+218,North shouna,Al masharia alqarbi,Tabqet fahel Res Gravity,wensday 8am to 4pm,feed by 200 and it by the branches of 200 to feed this area from north to south,572
+217,North shouna,Tabqet fahel,Tabqet fahel Res Gravity,thursday 8pm to 11pm,from the mean pipe line 400 there are branches it feed this area,504
+216,North shouna,Arab alhasan,Tabqet fahel Res Gravity,friday 8am to 7pm,from tabqat fahel 400mm there area branches 250 there are 150 it continue to end the area and ther are breanches from 150 100 also it continue with 150,779
+215,North shouna,Hay alsaqur and seel alhamma,Tabqet fahel Res Gravity,sunday 8am to 10pm,form 250 ther are branches 100 feed the area the located in South mid,253
+214,North shouna,Tall al alarbieen (40),Tabqet fahel Res Gravity,sat 8am to 1am sun,feed by 150 and from 150 there are two branched one open and another closed to one of them to feed the near custumer and onther continur to conection beteen them to feed the area of tall alarbieen,970
+213,North shouna,aqleeat algarbeeh and alsharqeeh,Tabqet fahel Res Gravity,sunday 8am to 1am monday,"because the water is continuti it close and open form tabqetfahel to feed this area so it feed by 200mm from tabqet fahel form south to north by branches 200 and from 200 there are 100,63",246
+212,North shouna,Escam alqleeat,Moa'th Res gravity,sunday 8pm to 3Am monday,from 200 that feed by Moath' res,227
+211,North shouna,Waqas albawati,Moa'th Res gravity,monday 8am to 4pm,from the 200 it feed the two pipe 200 and from the 200 there are branches 100 feed athe area and 125,245
+210,North shouna,Alaramsheh and الفضيه,Moa'th Res gravity,monday,from 150 fomr 300 branch,293
+209,North shouna,Waqas albalad,Moa'th Res gravity,sun 8am to 6pm,"300 continue to when reduction to 200 and 150 the pipe 200 to south to give the waqas by branches 100,100,125..",637
+208,North shouna,almanshet west the street,Moa'th Res gravity,sat 8Am to 6Pm,"the seam of East there are branches from 300 from 100, 150 , 100 to feed the West the street",441
+207,North shouna,Mansheeh Sharq,Moa'th Res gravity,friday 8Am to4 pm,"the 300 pipe from Moath res continou to south and from it  ther are branches 125, 100 , 150 ,63 feed the the sharq the street Manshet sharq  all the pipe from the 300",441
+206,North shouna,Hay Almoalaqa,Moa'th Res,thursday 8Am to 6Pm,the 300 and   in the south of the area there ara branch 200 from it and from the 200 feed the area by branches 63 and continou for the north there are branches 150 form 200 feed area and contionr 200 also form the 300 beginin,1087
+205,North shouna,Escan Moa'th,Moa'th Res.,Wensday 8Am to 6Pm,300mm from Moa'th Res  continouto to feed the south and there are breanch 100 form 300 to feed the weast area and from the 300 in matala there are breanch 150 and from 150 there are 100mm feed the south area also,698
+204,Irbid-Obeid,Eskan almacroma,PS1Noima  pumping,friday,from 100 from 150mm,269
+203,Irbid-Obeid,Almarkiz alsihai area,PS4 Noima,Sunday 24hr,PS4 form 150 to100,782
+202,Irbid-Obeid,tloo ajloun street ajloun,PS4 Noima,Monday 24hr,from PS4 150 pipline,549
+201,Irbid-Obeid,Noima-Eng ashraf,Noimat PS4,wensday 8Am to thursday 8Am,150mm from PS4,522
+200,Irbid-Obeid,Masjed albarakat,PS4Noima,thursday 24hr,from 150 mm ps4,309
+199,Irbid-Obeid,Noima- Noaiher,PS4 Noima,friday 24hr from 8am,from PS4 from 150 south,378
+198,Irbid-Obeid,Noima alshiaha street ajloun,Noima PS4,tusday 24hr,150 to 100 two sourses,268
+197,Irbid-Obeid,University Irbid alahila,Noima PS4,friday 24hr,pumping from Noima 150 to 100 North,16
+196,Irbid-Obeid,Husin um alhawa,Hofa Pumping,thursday 6pm to friday 10am,pumptin forom husin PS 400,1604
+195,Irbid-Obeid,Husin assar and um algozlan masjed almagaeerh,Hofa gravity and pumpnig,sunday 10 am 1am monday,hofa 600 to two pipe 150 and 400 and 150 to 100,1694
+194,Irbid-Obeid,Husin sharq collage of Husin University,hofa grivity,wensday 10am to 1am thursday,from 300 from 600 south,2882
+193,Irbid-Obeid,north of husin University,Hofa grivity,Wensdya from 4am to 10am,300 from 600 South,1391
+192,Irbid-Obeid,sareeh Irhaieel,Zabda pumping,tusday 8am to 2pm,Zabda 600 to 400 to 300 to 150 mid aera,743
+191,Irbid-Obeid,camp Husin azmi almofty,hofa gravity and pumping,monday 24 hr,hofa 600 to 400 to 200 pumptin for husin ps and form 400 gravity,3183
+190,Irbid-Obeid,Escan alamilin and Bador,PS4,Satarday 24hr,fom PS4 fomr 150mm to 200,366
+189,Irbid-Obeid,Kitem Aljanoobi,PS1 & PS4,tusday 24rh,two sourses 150 fomr the PS1 and 100from PS4,537
+187,Irbid-Obeid,Escan um Asus,not work yet,not work yet,not work yet becoust the opreation the not exxet for 30%,0
+186,Irbid-Obeid,sooq Kitem,PS1 Noima,Monday 24hr,from 150 to 100 50form PS1,55
+185,Irbid-Obeid,Kitem alshamali,PS1 noima,Satarday,from 150mm and 100from Ps1 NOima,317
+184,Irbid-Obeid,Um alsharaieet,PS1 noima,wensday,from 150  to 100 form PS1,228
+183,Irbid-Obeid,shatana,Noima PS1,thursday 24hr,from 150mm PS1,135
+0,Al-mefraq,Um karouba,bwida gravity,tusday 8am to 4pm,from 63o from 100 jarash street from 150 and frm 300from bwoida PS the feed from the north,26
+0,Al_Mafraq,mozareen Daqmaseh,Daqmaseh PS pumping,wensday in morning 8am to 2Pm,from puping from the Ps,17
+0,Al-Mafraq,Al karam,Alknieeh PS (Meahona),monday 24hr,150 form the alknieeh Ps to 63 feed this area,17
+0,Al-Mafraq,kajaniyyeh + hay sharrqee + abu saffer,bowida pumping,friday 12hr,from bowida 300mm north of area to 100mm to 50 feed from the north to south,166
+0,Al-Mafraq,Dajaniyyeh hay alosood,bowida pumping,friday evening 12,50 from 150,41
+0,Al-Mafraq,dajanyyeh hay gharbi,bowida pumping,12hr friday morning,from 200mm from bowida to 100 and 50 to feed the area,66
+0,Al-Mafraq,Dajaniyyeh Hay gharbi aljanobi,bowida pumping,sat morning 7hr,"from 200 to 50,100 from bowida ps pumping",259
+0,Al-Mafraq,Dajaniyyeh Wasat albalat,bowida ps,sat 6pm to 6am sun,"from 150 to50, 63 , 100 from bowidat ps",162
+0,Badia,Safawi janoubi,Safawi PS,8pm tusday to 8pmwensday with fulling the resurvour,note the resurvoir feed from the 16hr the pipe line exsit form the PS is 100 and divided to 63mm to feed the area,146
+0,Badia,Hay shamali,safawi PS,10am tusday to 6pm friday,the water feed the first sharq area and garpi the schoual is repeated when finishte the cicyel not every week,187
+0,Badia,Hashmyye/Alyah shwee'er/ Manshiyyet khaleefa /slaah JAW,K140 PS,8am to wensday to 5pm,"this area feeded by pipe from the 400mm it's 100, and 63",66
+0,Badia,Bashriih + Hamra suhem sharqi,Beshryyeh PS,8am wensday to 2 thursday,"from the PS the PS feet two line one is 200mm exist from the pS and there are pipe 300  feet the 400mm pipe line and fromt the two pipe line 400, and 200 feed the area by breanches 125,100,63",323
+0,Badia,Dir Al-Kahf,Beshryyeh PS,thursday 2pm to 12 sat,by pipe 200 from beshryyeh PS,293
+0,Badia,"Tal Rmah,Mrajb, deir al qen ,jadaa,Mathnah , mansoora",Dr Al-kahf PS,2pm sat to 8Am wensdy,from 150 mm from Dr Al-Kahf,241
+0,Badia,HAMRA SUHEIM GHARB,124PS,7AM SUN TO 6AM MON,from the pipe 150 from the 124ps feed this area,195
+0,Badia,Hlaiwa alabdoun,K124 PS,8am sat to 4pm sat,there area pipe 150 from the PS feed this area by 63,65
+0,Badia,HLAWA shamali,124 PS,6am mon to 6am tusday,from 200mm pipe form 124PS,161
+0,Badia,HLAWA janoubi,124 PS,4pm sat to 6am sun,this area feed by 125 from the 150 mm pipe to feed  this area from branches,118
+0,Badia,MANARA + SAADA SHARQI,124 PS,7AM tusday to 7 am thursday,there area line 150 from 124ps and there another area feed by 400,412
+0,Badia,Saadeh,124 PS,7Am thursday to 12pm friday,"this area feed by 124 by 400 and there 100 also 150,.. to feed the area",246
+0,Badia,Ashrafiyyeh & Nayfeh,K111 PS,8am thursday to 9pm,"from two pipe 400, 200 and the ashrafiyyeh feed by 400 and Nayfeh feed by 200 throgh 100mm",497
+0,Badia,RAHBET RAKKAD & Al Hamidiyya,Poster K111 PS,7am wensdy to 9pm,the K111 ps take the water from 600mm and give the water to 400 and 150 and this area feed by this area,317
+0,Badia,Bustaneh,K103 PS,sun 7am to 7am monday,by 150 from the PS and feed this area,126
+0,Badia,Zamleh,K103 Ps,7am mond to 6Pm,from pipe 150 from the PS to feed this area,129
+0,Badia,SALHIYYEH HAY SHARQI JANOOBI AND SHAMALI,k103 PS,8pm Mon to 8am sun,from the 150 pipe line from PS,422
+0,Badia,SEEDIYYEH HAY SHAMALI SHARQI,k96 PS,7 AM SAT TO 7 AM tusday,"for this area there are two main pipe sourse 150, 100 to feed this area",172
+0,Badia,North Badia Hospital,K103 PS,every day 24,this area feed by two sourse the first from 150  mm from 103 ps and there another pipe 150 from K96 ps feed in sun and mon,1
+0,Badia,saadiyyeh + ada'man + fraaj,K96 PS,7am tusday to 7 friday,the main pipe line is 150 mm and 125 and there are 100 from 150,208
+0,Ramtha,south ramtha (kibar almoshtariceen),Za'tari PS,thursday to satarday 60hr,from the main branches from the za'tary pipe to hofa by 300mm pipe,22
+0,Ramtha,sarh alshaheed,Zatarie PS,thursday 5am to 11am,feed by the main pipe and there branches 150 and 63 feed the area,102
+0,Ramtha,Hay alzohour,Zatari ps,thursday 5pm to 11pm,all feed by the main pipe line branches form the pipe line of zatari pipe line,1199
+0,Ramtha,Almotasarfiieh,Zatari'e ps,thursday 5am to 11am,from the main pipe line of zatari' branches from the south to north,1342
+0,Ramtha,Al jarameh,zatari'e PS,thursday 11am to 5pm,from the main pipe of zatarai' branches,697
+0,Ramtha,wast albalad,Zatari' PS,thursday 11pm to 12pm friday,froam the main pipe line zatray 300 and 250 from the main pipe and there another sourse for this area Alhodod PS there are pipe 200 from the ps to this area to feed it,1297
+0,Ramtha,Al tatoieer alhadarie,Zatari'e PS,friday 5pm 11pm,there branches form the main pipe of zatari and there are another soursr form alhodood PS the water copmprsion from two side to feed the high elevation area,907
+0,Ramtha,sooq,Zatari' & hodood,friday 5am to to 1pm,in the mid of this area there are colection of the valves and the system is close two valve south to feed the north are and afther that close the two valves north to feed the south area and this colection tow sourse hodood and zatari',2691
+0,Ramtha,Hay sharqi,zatari' ps & hodood,sat from 5am to 1pm,from two sourse the first one from the main one from the zatari' and another  one from the hodood ps,602
+0,Ramtha,Al dhadah,Zatari' and abu albasaal ps,sat 11am to 6pm,in south there two pipe one is branches from the zatari'e and another one frrom abu albassal PS 200 and it become 300,654
+0,Ramtha,dabet Nemer,zatari' PS and abu albasaal PS,sat 11an to 6pm,from south there are pipe 300mm from abu albassal (it exest from the ps 200 and become 300 ashah alkansaa )and from the north 300 from zatari',1004
+0,Ramtha,Al donaieeb,almahasie ps,this schoal for area repeadted every 18 in winter and 10 day and the supplay water 48 hr,200mm form PS,415
+0,Ramtha,Emrawah,almahasie ps,this schoal for area repeadted every 18 in winter and 10 day and the supplay water 48 hr,200 from PS,537
+0,Ramtha,Al shajara,almahasie ps,this schoal for area repeadted every 18 in winter and 10 day and the supplay water  144hr(6day),300 from PS and note this area need for this time becose some of issios like need to fill the Res. and some time the electrice cut and so on,2183
+0,Ramtha,Altorra,almahasie ps,this schoal for area repeadted every 18 in winter and 10 day and the supplay water  120hr,this area feed by 300mm from ps to 150 and100 to feed thisa aer,2362
+0,Ramtha,treeq alturra,almahasie ps,wensday 12pm to 6pm,from direct the Ps there are pipe ps and breanches on this pipe,237
+0,Ramtha,Hay Abu Al-basal,abu al-basal PS,sun 5am to 5pm,note the pipe from ps is 200 not 300 - from the 200 feed this area,787
+0,Ramtha,Al massara,Abu albassal PS,sun form 5 pm to 5am monday,from the 200 pipe form the ps,295
+0,Ramtha,Tareeq Alshlaal,Abu albasal ps,5am monday 5pm,from 200 pipe line from abu albasal ps,391
+0,Ramtha,Shara' ashreen,Alhdood ps,mon 12pm 6pm,Al hdoud ps from 150 mm,290
+0,Ramtha,hay albashabsheh,al hodoud ps,mon 6pm to 6am tusday,150mm from ps,224
+0,Ramtha,Hay shamali,Al hodoud PS,tusday 6am to 6pm,200mm from the ps,514
+0,ramtha bwaidha,Hay bareed bwaidah,Um alulu PS,tusday 8am 4pm,this area feed by pipe line 100 from 150,150
+0,ramtha bwaidha,Hay mesmar,Um allolu PS,tusday 4pm 12am wensday,this zone feed by branches 63 from 100 from 150 to feed this area,72
+0,ramtha bwaidha,hay markez sehhi,Um allolu PS,12am wensday to8 am,"this zone feed by branches 63,100 from 150 to feed this area",238
+0,ramtha bwaidha,Hay sharqi,Um allolu PS,8am wensday to 4pm,"this zone feed by branches 63 ,100 from 150 to feed this area",160
+0,ramtha bwaidha,Hay karama & sharia' alra'eesi,Um allolu PS,12am to 8am thursday,"this zone feed by branches 63 ,100 from 150 to feed this area",340
+0,ramtha bwaidha,Hay sad,Um allolu PS,wensday 4pm to 12am thursday,"this zone feed by branches 63 ,100 from 150 to feed this area",99
+0,Mefraq,Hay al Sahel,Khaldyeh PS,thursday 5pm to 1pm friday,from 200mm from the Khaldyeh PS by branches,305
+0,Mafraq,Meshrefeh & daheyat alhussin,Khaldyeh PS,sat 5pm to sun 5pm,from the continue for the 200mm form the PS khaldyeh,836
+0,Mefraq,Mabrookah and Makhzomyyeh,Khaldyeh PS,friday 1pm to sat 4pm,from the 200mm form the PS khaldyeh,941
+0,Mefraq,Hay Omar and abu shendiand,Khaldayyh PS,sun 4pm to to mon 4pm,"from 300 there area branches 100 ,63 to feed this area",818
+0,Mefraq,Hay Jundi,Kkhaldyeh PS,thursday 1pm to friday 1Pm,from 200 there are breanches 100 to feed this area,193
+0,Mefraq,Hay Gharbi,khaldyeh PS,mon 4pm to 4pm tusday,from the 300 mm from ps,752
+0,Mefraq,"Mothallath sharqi , hay ameer ali , sediyyeh",khaldyeh PS,tusday 4pm to 4pm wensday,from 300mm from ps,865
+0,Mefraq,Hay al karammah,Khaldyeh PS,tusday 4pm to wensday 4pm,from the 300 south of area fther earea branches feed this area,632
+0,Mefraq,Mfaradat,Almofradat PS,24h /7day,from well mostajar there are ps feed this area and it,134
+0,Mefraq,Hay aljeeran,Al Zubaideyeh PS,8 am friday to 8am sat,direct from ps there are pipe 100mm to feed the near area,34
+0,Mefraq,hay abushakir,Al Zubaideyeh PS,sat 8am to 8am sun,from this 150mm pipe line from this ps feed this area,89
+0,Mefraq,Hay zarafat,Al Zubaideyeh PS,from sun 8am to mon 8am,from pipe l ine 125 polythline from ps,53
+0,Mefraq,Fhailyyeh,Al Zubaideyeh PS,monday 8am to tusday 8am,from 125 from ps,56
+0,Mefraq,Hay Nada Zbadi,Al Zubaideyeh PS,tusday 8am to 8am wensday,from 125 from the PS,65
+0,Mefraq,Tareeq Al Nahdah,Al Zubaideyeh PS,sat 8am to 8am sun and wensday 8am to thursday 8am,from 150 mm from PS,66
+0,Mefraq,Hwajah and Hay alamerah Hya,Al Zubaideyeh PS,thursday 8am to 8am friday,100mm from ps to this area,98
+0,Mefraq,Hay Albaladiyyeh,Um EsSerb PS,8am friday 8am sun,from 100mm from PS,75
+0,Mefraq,Al wasit and tareeq samp alsarhan,Um EsSerb PS,8pm sat to tusday 8am,from 150mm form ps to this area,280
+0,Mefraq,Rawded Rowayei,Um EsSerb PS,thursday 8am to 10pm,from seprated pipe line from the ps 100mm to feed this area,97
+0,Mefraq,Sawalah,Um EsSerb PS,thursday 8pm to 9am friday,seperated pipe line 100mm from  ps,112
+0,Mefraq,Nahdah,Um EsSerb PS,tusday 10am to thursday 8am,150 from ESserb PS,180
+0,Badia,AQEB,K93 poster,8 am mon to 12 pm tusday,from the PS 100mm,252
+0,Badia,Hay Alamer abdullah,poster K93,8am sun to 8pm,from the pipe form the poster 100 mm,83
+0,Badia,Hmedyyet masaeed,poster k93,8pm sun to 8am mond,from 150 mm form the poster,91
+0,Badia,Taybeh and Hay shabbar,Rawdet Amera Basma PS,12pm tusday to 11 pm wensday,from 150mm from the PS and after reach the area it there are branches to feed this area,140
+0,Badia,Rawdet Amera Basma,Rawdet Amera Basma PS,8am wensday to 8am sun,from the south the area hay sharqi and after that the worater go to up and  Right to Left and there are vlave fore each part from two pipe line 150 from the PS,990
+0,badia,"um Jmaal baladih , Madahleh",Rawdet Amera Basma PS,8am mon 8pm tusday,from the pipe 150 from PS and note for the in UM jemal chanes every week,156
+0,Badia,Hay Alathaar,Rawdet Amera Basma PS,8 am sun to 8 am mon,from the ps 150mm and the schoal is changes every week in all the Um jeamal area,151
+0,Badia,Hay Maktaba,Rawdet Amera Basma PS,8pm sun to 8am mon,from 150 mm,28
+0,Badia,hay marqiz alsihi,Rawdet Amera Basma PS,8pm tusday 8pm wensday,from the 150mm from the ps,218
+0,Badia,Rahmat,Koum Ahmar ps,8am Friday to 8pm,from 100 mm for ps,42
+0,Badia,Koum Ahmar Hay shamali and Janoobi,Koum Ahmar ps,12 pm wensday to 12pm thursday,"feed by 100 , 125 from PS",439
+0,Badia,MANSHIYYET ALKAMEES,Koum Ahmar ps,7AM sun to 9pm,from 100 from ps,51
+0,Badia,Rasm Alhesan,Koum Ahmar ps,10am mon to 6 am tusday,from 100mm from ps,43
+0,Badia,Hay Al Joulan,Koum Ahmar ps,thursday 12pm to 8am friday,100mm and 50 mm and not like the Gis network,52
+0,Badia,shari' Rai'eesi,Amra ps,8 am sat to 8 am sun,from the main pipe 150mm and branches 125 and 100mm,317
+0,Badia,Koum Al-Raf,Amra ps,8am tusdy to 8an wesday,this area feed by 100from the 150 mm pipe to feed  this area from branches,120
+0,Badia,Qarb  Sab' Esyar,Amra ps,8 am thursday 8am friday,"this area feed by 100,125 from the 150 mm pipe to feed  this area from branches",151
+0,Badia,sharq SAbe' Esyar,Amra ps,8 am mon to to 8am tusday,"this area feed by 100,125 from the 150 mm pipe to feed  this area from branches",109
+0,Badia,Hay Rheiba,Amra ps,8am wensday to 8am thursday,"this area feed by 100,125 from the 150 mm pipe to feed  this area from branches",106
+0,Badia,Alfaisaliyeh & Al Harara,Alfaisaliyeh PS,8am sun to 8am mon,the system is there are sepreated 100mm from the PS exsist to feed this area,99
+0,Badia,Sobhiyyeh,Sabha PS,8am sat to 8am sun,from 150mm pipe  from the PS,241
+0,Badia,Sabha,Sabha PS,8am mon to 8am friday,"the water system from the PS there are two pipe 150 and there are branches on this pipe it 100, 125 and 63 to feed this area",788
+0,Badia,Manshiet algoblan,Dafyaneh ps,wensday 8am to 8am thursday,there area pipe 200 from ps to feed this area,75
+0,Badia,Dafyaneh,"Dafyaneh ps , Mukefteh PS","tusday 8am to wensday 8am (Dafyaneh ps , Mukefteh PS)","this area feed by two main pipe from PS 200, 150 by branches 125,100,63 to feed this area",244
+0,Badia,Hay Alhelo,Dafyaneh PS,thursday 8pm to friday 8am,"from branches125,63 from the pipe 150 to feed this area",63
+0,Badia,Khshaa Slaiteyeen,"Dafyaneh ps , Mukefteh PS",8am mon to 8am tusday,from the same pipe 200mm it connnected between two PS and feed half time from Dafyaneh ps and half time from Mukkefteh ps,271
+0,Badia,Hay algomaad,Dafyaneh ps,8am sat to 8am sun,pipe 125 mm from the 200mm pipe,21
+0,badia,Um Qutain,Mukefteh PS,8am friday to 8am monday,"the main sourse of the water from the pipe 200 and there are branches on this pipe 125, 100 to feed this area",986
+0,Badia,Mukaifteh,Mukefteh PS,7am wensday to 8am thursday,from the main pipe 200mm,537
+0,Badia,Mazouleh,Mukefteh PS,8am friday 6pm friday,from 125 pipe line from ps,41
+0,Badia,abu alfarth and Manshiyyat Qanno,Mukefteh PS,8am thursday to 8am friday,from the main pipe 200,240
+0,Badia,Abu Alfarth,Abu Alfarth PS,8 am thursday to 2 pm friday,from the 100mm pipe line from PS,64
+0,Badia,Qasem,Abu Alfarth PS,8am sat to 8pm tusday,from the 100mm pipe from PS,187
+0,Badia,Mnaisa,Abu Alfarth PS,8 pm tusday to 8am thursday,this area take the water from PS through pipe 125mm,111
+0,Badia,Rifaeyyat Hay sharqi,Rifaeyyat PS,8am sun to 8am mon,from pipe 100mm from the ps,46
+0,Badia,Um Hussein,Rifaeyyat PS,8am tusday to 8am thursday,from pipe 100 mm,60
+0,Badia,Arainba,Rifaeyyat PS,8am mon to 8am tusday,from pipe 100,18
+0,Badia,Awsat and Neimat,Rifaeyyat PS,8am thursday to 8pm friday,"from the main pipe line 200 there area branches to feed this area by 125,63 from 200mm pipe",55
+0,Badia,Refaeyyat Gharbiyyeh,Rifaeyyat PS,8am sat to 8am sun,"this area near of PS and feed by   branches  from the main pipe out of PS to feed this area by 125,63 from 200mm pipe",26
+0,Badia,North Alrvaiat Abu Rashid Almezerh,Jubbiyeh PS,8am wensday to 8am thursday,from the main pipe 200mm there area pipe 125 to feed this area,84
+0,Badia,Jbayya albalad,Jubbiyeh PS,10 pm sun to 8am tusday,"this area feed by two pipe line 100, 200 from Jubbeiah PS",165
+0,Badia,Hitem,Jubbiyeh PS,12pm sun to 10pm,"this area feed by 63, 125 from 200 from",37
+0,Badia,Hay Albaladity,Jubbiyeh PS,8 am tusday to 8 wensday,this area feed by pipe line 125 from 100 from 200 fom ps to feed this area,44
+0,Mefraq,Kherbet Samra,Zneeah PS,8pm sun to 8am mon,from 150mm from 300,221
+0,Mefraq,Toog Upper,Zeenah PS,sun 8am to 8pm,from 150mm and this pipe from 300,101
+0,Mefraq,Al Qe'rah,Zeenah PS,sun1pm to 8pm,from 150 take from 300,85
+0,Mefraq,Zaytooneh Fooqa,Zeenah PS,sun 9pm to 4pm mon,"from 100 ,125 from 300 mm",179
+0,Mefraq,ZAYTOONEH GHARBYYEH,Zeenah PS,friday 8 am to 4pm,"note the date in Gis is error so the correct the 150 from 300 and from 150 there 100, 50 to feed this area",142
+0,Mefraq,Zaytooneh Sharqiyyeh,Zeenah PS,thusday night to 8am friday,the schedule start as available of the water there are two pipe from the 150 from 300 and each on for area sharqeeh and Gharbyyeh,80
+0,Mefraq,Hay Almarqez alsehhi,Zeenah PS,monday 8am to 4pm,branches from 150 and 100,45
+0,Mefaq,Masane',Zeenah PS,sun 8am to 8pm,from 150 from 300,26
+0,Mefraq,Daba'an,Daba'an PS,monday and thursday separated 48 h,from ps  there are pipe feed this area,42
+0,Mefraq,Hay Alsafa,Zeenah PS,8pm sat to 4pm sun,from 150 there are breanches 50 feed this area,45
+0,Mefraq,Hay Taamiyyeh,Zeenah PS,friday 8pm to 8am sat,from the 150 there are branches and from the the prancehs there are 50 feed this area,50
+0,Mefraq,QARYOUTI,Zeenah PS,SUN 8am to 1pm,this area feed by pipe line 63 branches from 100 from 150 from 300 to feed this area,129
+0,mefraq,Mazraah tabba' Hjooj,Zeenah PS,6pm friday 6am sat,this are feed by pipe line 63 take from 100 and it take from 150 to feed this arae,121
+0,Mefraq,Hay Markez sehhi Mazraah,Zeenah PS,sat 8pm to 8am sun,thisa area take the water from the pipe 100 from 150 from 300 from Zeenah PS pumping,245
+0,Mefraq,THAHRIYYE,Zeenah PS,8pm tusday to 4pm wensday,in this area give the lower area first and give the high elevation after,74
+0,Mefraq,Znayya Albalad,Zeenah PS,5am thursday to 4pm,from 150mm,252
+0,Mefraq,Abu EthHoor,Zeenah PS,mon 9am to 10pm,there two pipe,68
+0,Mefraq,Nedhamiyyeh,Zeenah PS,thursday 8pm to 8am friday,it's depend on the avilabile of  the water,69
+0,Mefraq,"Hamnanah , Bostanah and part of Um SWEIneh",Balama PS,friday,this are feed by the pipe line 180 from the PS 180 and it take from 180 and from 300 from the PS,310
+0,Mefraq,Jabal anoor phase 1,Balaama PS,wensday 12pm to 5pm thursday,from the resv. and there breanches,187
+0,Mefraq,Hay AL Hussein,Balaama PS,wensday 8am to 12am thursday,from the 250 mm form the ps to branches 125,142
+0,Mefraq,Hay Qo'man,Balaama PS,8am wensday to 12am thursday,from 250mm from the PS,115
+0,Mefraq,Hay Qebaa,Balaama PS,thursday 12am to 8am,from 250mm from the ps,132
+0,Mefraq,"Nuzha Gharbiiyyeh , Mdaweer",Balaama PS,8am wnesday to 8am thursday,from 250mm form the ps,150
+0,Mefraq,Nuzha sharqyyeh,Zeenah PS,monday 4pm to 8am tusday,from the 200mm pipe,83
+0,Mefraq,Jabal Akhdar (old Network ),Zeenah PS,thursday 10am to 7am friday,from 300 form the ps and reduction to 200 to  feed this area and this area is very old,641
+0,Mefraq,Jabal Akhder phase 2,Zeenah PS,tusday 8am to to 8pm,200 from ps to 250 and other breanches,389
+0,Mefraq,Hay AGGAD and Balaama Hay shamali,Zeenah PS,monday 8pm to 8am tusday,from 200mm form the ps there are brainches 125,176
+0,Mefraq,Mortafaat Balaama (Jabal alnaar old netowrk),Zeenah PS,tusday 8pm to 8am wensday,ths area take the water from 100 from 200 from ps,253
+0,Mefraq,Balaama albald,Zeenah PS,mon 8pm to 9am tusday,this area feed by 100 from 200 from PS pumping,394
+0,Mefraq,Nahdah,Zeenah PS,friday 7pm to sat 6am,from branches,89
+0,Mefraq,Um Swaineh Mortafaat,Zeenah PS,sat 8am to 8pm,form 200mm to 150 gharb,151
+0,Mefraq,Part of Swaineh,Zeenah PS,friday 8pm to sat 8am,this area feed by pumong through 100mm from 200 from PS,57
+0,Mefraq,Hayyan Rwaibedah Gharbi,sumaia PS,wensday 11am to thursday 12pm,from 150mm,285
+0,Mefraq,Hayyan RWAIBEDH SHARQI,sumaia PS,tusday 9pm to wenday 11am,from 150 pipe sumaia,405
+0,Mefraq,Nemrah,poster Nermrah,sat 9am to 8am mon,this area feed by Poster by line 100 .,121
+0,Mefraq,Baej Hay Janoobi Gharbi,BAEJ 2 PS,sat 8pm to 8am mon,from the direct pipe 150mm from the ps,142
+0,Mefraq,BAEJ HAY JANOOBI,BAEJ 2 PS,mon 8am to 8am tusday,"from the direct pipe ,100 to50 mm from the ps",39
+0,Mefraq,Baej Hay Gharbi,BAEJ 2 PS,sat 9am to 8am mon,100mm frm ps,129
+0,Mefraq,Baej Hay SHAMALI,BAEJ 2 PS,8am tusday 4an thursday,colect valve 50 to 25,178
+0,Mefraq,Hay Al Mebrek and Hay al ATHAR,BAEJ 2 PS,wensday 8am to 4am thrsday,from the the ps to main pipe line to collect and to this area 100 to Mebrek are,80
+0,Mefraq,BEDAYAT TAREEQ MESHIREF,BAEJ 2 PS,sat 8am t o 8pm,from the main pipe 100 fromt he colector valve,16
+0,Mefraq,Mehrif Hay shamali,BAEJ 3 PS,4am thursday to 8pm friday,from the PS 3 BAEJ from two pipe 100mm,134
+0,Mefraq,Tareeq Koum Ahmar,Koum ahmar ps,8pm thursday to 8am friday,this are drink from the badia area koum ahmaar but it realated to Mefraq area,24
+0,Ajloun,Rasoun_Albalad,Ain Rasoun,sat to tusday,from the ain rason 100mm feed this area and if this area weak of water it's supply by samad pipe 63 from 400mm,370
+0,Ajloun,Zawahreh Rason,Ain Rasoun,8am wensday to sat,from the same pipe line 100,326
+0,Ajloun,Orjan,Ain Tannour & Ba'oon,four day and it repeated 23-21 day,the water transit from ain tannour to ba'oon and from Ba'oon ps 150mm return to this aera from Ba'oon,720
+0,Ajloun,Ba'oon,Ba'oon PS,30hr it's repeated every 21 day,the pipe exest from the PS 150 and it branches to 100 pips to feed this area,665
+0,Ajloun,Awsarah,Ba'oon PS,30hr  and it repeated every 23 day,150mm from the ps and in it reduction to 100 and feed this area,314
+0,Ajloun,Al Jaardoan,Ishtafena PS,30hr every 21day,from the main pipe line 125 and it reduction to 63 to feed this area,65
+0,Ajloun,Mehna&Tayyarah,Ishtafena ps,30 hr every 21day,from the pipe line 150 there aea 125 pipe line to feed this aerea,213
+0,Ajloun,Um El-Yanabie',Ishtafena ps,30 hr every 21 day,pipe line 125 from 150 from Ishtafena ps,71
+0,Ajloun,Afna,Samad,24 hr every 14 day,from the pipe of Samad there aere,264
+0,Ajloun,Al Sawame',Ishtafena ps,24hr every 21 day,from pipe 200 there area branches feed this area,47
+0,Ajloun,Ain Janna hay gharpi,Ishtafena ps,48 hr ever 21 day,from the 150 pipe line,550
+0,Ajloun,Ain Janna,From Ajloun reservoir and Ain Janna,24hr every 21,this area feed by Ajloun Resrvoir mainly and small amount of water Ain Janna,1873
+0,Ajloun,Ain Jannay Hay sharqi,Ishtafena ps,24hr per 21day,from 200 there area branches feed this area,151
+0,Jerash,Alshamaliat,Ras Monief Res,Friday (12pm to 7pm) every 14 or 21 day,"400mm to 200 to Sakep ps and from the ps 150, 100 to feed this ae r",289
+0,Ajlun,Sakera near jerash,Ras Moneef Res,8hr friday to sat,this area feed by  pumping from sakep PS by 100mm from 150 from 200 and can feed from other pipe 150 from ps,436
+0,Jerash,Hay Alzabeeb,from Sak ps,Sun from (8am to 12pm wensday )every 14 day,there area 150mm pipe line feed this area,378
+0,jerash,Hay Um deaf allah,from Sakeb ps,friday from 6hr (8am to 1pm),fro 100 mm from the ps to feed this aer,141
+0,Jerash,"alhusiant , Najdah and hawaia",from Sakeb PS,sat to sun12hr every 14 day,from the ps 150 mm to feed this area,1193
+0,Jerash,Al-junaydyeh,Bowidah PS,tusday (7pm to 6am wensday),200mm to 100mm to feed this area,128
+0,Jerash,Al-Fayha,bowidah PS,sunday 24hr,100 from 150 to feed this area,212
+0,Jerash,Al Mesherfeh Al-Gharbyeh,bowidah ps,Sat 9pm to sun 6am,from the 150  and to 100 to feed this area,158
+0,Jerash,Hay Maoieed,Bowidah PS,monday 7am to 7pm,from the mean pipe line 150mm,31
+0,Jerash,Hay aloala wa sacan alfograa,bowidah ps,tusday 1pm to 7pm,from the 150mm there aer 100 breanches feed this area,84
+0,Jerash,Kabar_BAL,bowidah ps to Res_bal,sat 9pm to to 6am sun,from Resurvour Balela,229
+0,Jerash,Baleela Hay Almadares,Bowidah Ps to res,sun 11pm to mon 3am,from the 150mm to feed this area,354
+0,Jerash,Hay kalieel,Boidah Ps to resv,sat 9am to 6pm,by giravity from pip 100 from 150 from Res Balela Res,208
+0,Jerash,Hay Najeeb,Ain Aldeek PS,20hr every 21 day in summar and in weinter every 14 day,100mm from ps to feed this area,136
+0,Jerash,Ras faeaad,Ain Aldeek PS,12hr after Hay najeeb and repeat every 21 day in summer and 14 day winter,"from 100 from the PS there are breaches 100, 63 feed  this area",196
+0,Jerash,Um Zaitoon,Bowidah PS,8an sat to 1pm every 14day,from the 200 mm from PS to thisi area,193
+0,Jerash,Qafqafa,Bowidah PS,sat 1pm to tusday 1pm every 14 day,from the main pipe from the PS it divided to 10 hayes and each one have 5hr schedule,922
+0,Jerash,Jaba and Qran and naamieh,tusday1pm to 1am every 14 day,Bowidah PS,from the 150mm pipe from 200 from the PS and feed this area,127
+0,Jerash,Almajar Sharqi and GHarrbi and EScan Ajrama,AL Shawahed PS,56 hr every 20 day,from 150 mm there are pipe branches 100 feed this area,237
+0,Jerash,Kufer kal_hay jami'a altoteh,Ras Moni'ef Res,wensday 1apm to 7pm,from the main pipe line from the Ras Moni'ef Res,75
+0,Jerash,Kufer Kaal_hay Alahed,Ras Moni'ef Res,wensday 7pm to thursday 1am,from the main pipe line come fromRas Moni'ef Res and there area breanches feed this area,430
+0,Jerash,Kufer Kaal_Hay albaladeh,Ras Moni'ef Res,thursday 1pm to friday 8am,from the main pipe line from Ras Moni'ef Res,206
+0,Jerash,Hay Abu Sarhan,Ras Moni'ef Res,friday 8am to 1pm,from the main pipe line from Ras Moni'ef Res,33
+0,Jerash,Kufer kaal_hay almahafer,Ras Moni'ef Res,friday 1pm to 5pm,by 200 gravity from Ras Moni'ef Res,34
+0,Jerash,Kufer kaal,Wared Well,not constant,as avialable of the oil becose this area feed by Wared well and there area pump work on desel,40
+0,Jerash,Ketah Wast albalad,Ain Aldeek PS,48hr after Ras faaead,there are two main pipe 150 and 200 and there are branches fromt this two pipe (not 200 mm is cancel from the ps but it usful in network and 150 from the PS),755
+0,Jerash,Brahem alkalaf,Ain Aldeek PS,24 hr every 21,from 200 from the keteh network new pipeline 125 not included in Gis,78
+0,Jerash,Almahafeer,Ain Aldeek PS,24hr every 21day,from the netrok of Ketah albalad  there are pipe 150 and it give 100mm and from 100  there are branches to feed this aera,74
+0,Jerash,Ramoun,Ras monef Res,48hr every 14day,from the pipe coming from Ras moneef,1063
+0,Jerash,Nahleh,Ain Aldeek PS,84hr every 21day,150 from ps connect for 150 pipe keteh to Nahle and ther are breanches 100 and 63 to feed this area and not the supply from Ras monef is stop now but the pipe is currently exsest,607
+0,Jerash,Alnigaar,Ain Aldeek PS,24hr every 21 day,150 from 200 mm from ps there are pranches 100 and 63 feed this area,124
+0,jerash,Jamleh,Ain Aldeek PS,36 hr every 21,"there are three pipe line 100,100,125 feed this area",221
+0,Jerash,Dibieen_Hay alkaneesah,Ain Aldeek PS,10hr every 21 day,from 200  to 100 to feed this area,60
+0,Jerash,Al Jazazeh,Ain Aldeek PS,48 hr every 21,100mm from 200 (um lolo ) and there are abranches to feed this area,345
+0,Jerash,Hadadeh,Ain Aldeek PS,48hr every 21 day,this area feed pumping by pipe 100 from 200 from the PS,159
+0,Jerash,Gaza Camp,Ain Aldeek PS,150 hr every 21 day,there are two pipe from ps one for GAZA camp 200mm and another one for 100 mm Gaza Res and feed the area from one exsest from the ps and from Res Gravity two feeed the area,2944
+0,Jerash,Alboraj and almansourat and alhobsan,Ras monief Res,monday and tusday 36hr every 14day,"this area the lwoer area under the ras meneef it feed  by the every 14 from the main pipe line and in Gis there area error the pipe exist from 400mm is 200 not 100  it reduction to 150 and feed this erea by branches 100,63 and the highist area by suf PS",411
+0,Jerash,"highest area of Souf (alwasaten ,boset loseh , hay almadares , hay alqsour, hay alomomah wa altofooleh ,alshari' alraesi",Souf PS,100hr every 14day,"in this area the water from spring (two well) feed Souf PS and from PS feed Almanarah Res and from Res feed this area area by area under the 400mm by 200  and it reduction to 150,100 and feed this area",1381
+0,Jerash,kour salman +hay alababdeh,Ras Mone'f Rs,Monday 24hr every 14 day,"from Ras mone'f by branches from the main pipe 400mm  branches 200, 150",748
+0,Jerash,"Mantiqat almarqes alsihi ,treeq souf moqable masjed alzahraa",Ras monef Res,8am monday to 8am tusday,"from the pipe 150 from 400 there area branches 100,63 to feed this area by gravity",106
+0,Jerash,"Hay hani alqadiri , almasjed alqadeem , hay almadafah",Ras Mone'f Res,"48 hr sun , monday every 14 day",from the main pipe from 400 to 150 there area branches fee this area,599
+0,Jerash,Defaa madani souf and hotel qusen alzaitoon,Ras Monee'f Res,wesday and thursday 24 hr,from the 200 and 100 there aera 63 branches feed this area,50
+0,Jerash,Hay almarqes alsehee,Mashtal Fasal PS,24hr every 14day,from 100 mm pipe exsist from the Res and feed this area,50
+0,jerash,street alameer faesal,Mashtal Fasal PS,thursday every 14 day,there 100mm pipe from the juba poster reteren to feed this area and it reduciton to 50,47
+0,Jerash,Juba albalad,Mashtal Fasal PS,24 hr (14 -18) day,from the wells to Mashtal Fasal PS and to Poaster Juba and form the poster to Joba Res and from the Res there are more than one 100mm pipe feed this area,804
+0,Jerash,Hay Aljamaeeh,Mashtal Fasal PS,24-48 evey 14 day,from 100 mm pipe by gravity,107
+0,Jerash,Mastaba Hay anami'e,Mashtal Fasal PS,24hr -48hr every 14 day,100mm from 150 that exsist from the 200 and from Res,131
+0,Jerash,Hay moath bin jabal,Mashtal Fasal PS,24hr every 14day,this area feed by gravity by pipe 200 from Jubba Res,31
+0,Jerash,Hay almasjed alkabeer masjed alrhaman,Mashtal Fasal PS,24-48hr every 14 day,150 -100 -63,323
+0,Jerash,Hay aldobat,Mashtal Fasal PS,24-48 evey 14 day,this area feed by gravity by pipe 200 from Jubba Res,153
+0,Jerash,Hay Albead,Mashtal Fasal PS,24-48hr every 14d,this area feed by gravity by pipe 200 from Jubba Res,69
+0,Jerash,hay Aljesser,Mashtal Fasal PS,24-48 every 14day,from 100 mm from the netork for MAs and feed thisa area,123
+0,Jerash,Almarqes al sehie al qadeem,Mashtal Fasal PS & Talat Aruz PS,24-48 evey 14 day,this area feed by two resourses and it connected and supply each other to feed this area,49
+0,Jerash,Talat al Ruz albalad,Mashtal Fasal PS,24-48 evey 14 day,100 dictile feed this area,163
+0,Jerash,Hay Um nowarah,Mashtal Fasal PS,24-48 evey 14 day,from 100mm coming reverse from south to feed this area,69
+0,Jerash,Al-Raya Almarqez alsihiie,pumping Mashtal Fasal PS,24-48 evey 14 day,from 150mm from Res pumping,107
+0,Jerash,Hay Aldahamsheh,Pumping Mashtal Fasal PS,24-48 evey 14 day,63 from 150 feed this area by pumping,58
+0,Jerash,Hay Athamah,Mashtal Fasal PS& Um romanah ps,24-48 evey 14 day,froom 150mm pumping and 100 from Um Romanah PS,299
+0,Jerash,Houth sharqi and Gharbi,Mashtal Fasal PS& Um romanah ps,24-48 evey 14 day,froom 150mm pumping and 100 from Um Romanah PS,242
+0,Jerash,Hay Almoassasah alaskareeh,Mashtal Fasal PS& Marsaa Well,48 evey 14 day,loop 100mm feed this area,298
+0,Jerash,Samrah Al Rayeh Gharbeh,Mashtal Fasal PS pumping,24-48 evey 14 day,from 100 mm feed this area,101
+0,Jerash,Escan albosalah,Shawahed PS,sat 24 hr every 20 day,from shawahed pumping from the main pipe 200mm there are branches 100 feed this area,84
+0,Jerash,Hay Aladat,Mokhayam Souf Res (Gravity),30 hr every 20 day,from Mokhayam Souf Res 200 and reduction to 150mm and to 100 to feed this aea and 63(note there are error in Gis there are 200 in actully 400mm from Res and reduction to 150 and it not exsist in the Gis),284
+0,Jerash,souq,Mokhayam Souf Res (Gravity),24 evert 20day,100 from 150 from 200 from REs,84
+0,Jerash,Hay almaqfar,Mokhayam Souf Res (Gravity),24 hr evey 20  day,from 100 from 150 from 200 from res and the water system start south to north of area,332
+0,Jerash,Masjed alshaheed,Mokhayam Souf Res (Gravity),24 every 20 day,100 from right to left,251
+0,Jerash,Hay alhdeqa,Mokhayam Souf Res (Gravity),24 every 20 day,100 from 150 feed this area South left to right up,204
+0,Jerash,Masjed Alzakah,Mokhayam Souf Res (Gravity),24 hr every 20 day,100 from 150 to feed this area,204
+0,Jerash,Hay Al haouze alqadeem,Mokhayam Souf Res (Gravity),24 every 20 day,100 from 150 feed this area,189
+0,Jerash,Hay Alsatreeh wa hay masjed A'iishah,Mokhayam Souf Res (Gravity),48 hr every 20 day,from the pipe 150 new from the north there are 100 mm pipe feed this area,282
+0,Jerash,Hay Almaslak,AL Shawahed PS,8 hr every 20 day,100 from 150 from Al shawahed PS,81
+0,Jerash,Meqbleh Aual albalad,AL Shawahed PS,24 hr every 20 day,two branches 100 fro 20 cm and 50 from 150 from Al shawahed PS,88
+0,Jerash,Hay Almarqez alsihie and Mortafaat,AL Shawahed PS,24 hr every 20 day,100 from 150 from Al shawahed PS,91
+0,Jerash,Hay sharqi and Gharbi,AL Shawahed PS,24 hr every 20 day,100 from 150 from Al shawahed PS,118
+0,Jerash,ESCAN Shawahed and Hay Moderiat Shorta,AL Shawahed PS,48 hr every 20 day,from AL Shawahed PS there are 150 mm pipe and from 150 there are 100 feed this area,298
+0,Jerash,Hay Al habaiebeh,AL Shawahed PS,24 hr every 20 day,100 from 150 from Al shawahed PS,105
+0,Jerash,Masjed alhamad wa Mostashfa tayfoor,AL Shawahed PS,24 hr every 20 day,100mm from 200 feed this area,275
+0,Jerash,Hay Alzahraa wa Hay Abdulla school,AL Shawahed PS,48 hr every 20 day,100 from 200mm,597
+0,Jerash,Hay Alhaouze,AL Shawahed PS,24 hr every 20 day,"100,63 from 200 from to feed this area",107
+0,Jerash,Hay altarkees wa Mostashfa almoageen,AL Shawahed PS,48 hr every 20 day,this feed by AL Shawahed PS by 100mm from 200,296
+0,Irbid_Koura,Judyta,Judyta PS,tusday-wensday 48hr,"there area pipe 150mm from connected to 300 and feed the custumer for for near of the PS and there are pipe exsist from the PS 300 to Poster in Judyta and feed this area by 150 from poster and it divided to 100,63 to feed the area",2189
+0,Irbid_Koura,Kufor Abeel,Judyta PS,2 am thursday to friday 4pm,"there are branches 100 , 150 on the main pipe 200 out from the PS feed this area",1587
+0,Irbid_Koura,Kufer Awan,Judyta PS,friday 4pm to 4am sun,"there are branches 100 , 150 ,63 on the main pipe 200 out from the PS feed this area",1803
+0,Irbid_Koura,Bait Aidies,Judyta PS,sun 2pm- mon 4pm,"there are branches 100 , 150 ,63 on the main pipe 200 out from the PS feed this area and the system of the water from the south to north",934
+0,Irbid_Koura,south of Kofur Rakeb,Judyta PS,mon 4pm to 2am tusday,there are branches 150 on the main pipe 200 out from the PS feed this area,463
+0,Irbid_Koura,Tubna,Oyoon Hammam PS,48hr every week,the time encrease day or decrease day and that depend on the water available but in the winter is constant and the there are 100mm pipe line from Oyoon Hammam PS to poster in tubna and 150 to 100 to 63 to feed this area,978
+0,Irbid_Koura,Janeen Alsaffa,Oyoon Hammam PS,72 hr every 7day repeated,there are branches 150 on the main pipe 200 out from the PS feed this area,654
+0,Irbid_Koura,Janeen alsafa tatoer alhadari,Oyoon Hammam PS,24 every week,there are branches 150 on the main pipe 200 out from the PS feed this area,47
+0,Irbid_Koura,Zumal,Poster Samo',36hr every week,from the coolcetion of pipes that from the poster to feed this area by 100mm pipe,578
+0,Irbid_Koura,Samo' gharbi,Oyoon Hammam PS,12 hr every week,there are branches 63  on the main pipe 200 out from the PS feed this area,95
+0,Irbid_Koura,Samo' Sharqi and Wasat,Poster Samo',48 hr every week,"from the poster there 150,100 exsist from the Poster to this area",524
+0,Irbid_Koura,Kofer Kefia and samo' tareeq alktief,Poster Samo',48 every week,from the poster there are 150mm from the poster feed this area,848
+0,Irbid_Koura,Samt wa Marhaba,Oyoon Hammam PS,all week,"there are branches 200,150,100 ,63 on the main pipe 200 out from the PS feed this area",2315
+0,Irbid_Koura,Hay gharbi Dear abu saeed,Oyoon Hammam PS,all week,"there are branches 200,150,100 ,63 on the main pipe 200 out from the PS feed this area",2262
+0,Irbid_Koura,Juffayn,Oyoon Hammam PS,8am monday to tusday 8pm,"from two pipe 200, 100 from PS to feed this area",475
+0,Irbid_Koura,Ashrafyah Ras alamoud abu alqayn juffayn daher albaad,Poster Alashrafyyah,thursday 4am to 4am friday,"from 150 mm from 200mm form the ps and it  divided to branches 100,63 to feed this area",768
+0,Irbid_Koura,Kufer alma Shamali sharqi,Oyoon Hammam PS,8am wensday to 8pm thursday,"from branches from 200 pipe line through 63,100",1155
+0,Irbid_Koura,Alshrafyyeh Janobi sharqi,Poster Alashrafyyah,friday 8am to 8pm satarday,"from the main pipe line 200 there are branches 150, 100 , 63 feed this area",1103
+0,Irbid_Koura,Kufer alma Alhadayq and south gharbi,Oyoon Hammam PS,48 hr tusday and wensday,"from two main pipe 200 ,150 and from this pipe there area branches 100,63 feed this area",751
+0,Irbid_Koura,Kufr Rakib wa tareeq alroqa,Poster Alshrafyyah,sunday 24hr,"from the main pipe line 200 there area branches feed this area 150, and 100 and 63",526
+0,Jerash,hay Masjed alfarouq wa hay albirkitain,Al Qairawan PS,48 every 17day,from the ps there area pipe 150 to Res aljabal alkdar and bervor feed the REs it convert to 200 mm and return to this area,793
+0,Jerash,Escan Albirkitain,Al Qairawan PS,24 hr evey 16 day,from the ps there 150mm and it divided to 100 and 63 to feed this area,485
+0,Jerash,Wadi der algharbi,Al Qairawan PS,24 every 17 day,150 from ps and from 150 there area 100 feed this area,391
+0,Jerash,Salah balkies,Al Qairawan PS,48 hr every 17 day,from the 150 from the PS here are branchs 100 and 63 and 50 feed this area,287
+0,Jerash,daher alsero hay masjed alsabrieen,Al Qairawan PS,80 hr every 17 day,"from the main pipe from the ps 150 there are 100 and 63, 50 feed this area",923
+0,Jerash,"daher alsero ,hay almedbaah and hay al sheek sleman",Al Qairawan PS,48hr every 17 day,"from the main pipe from the ps 150 there are 100 and 63, 50 feed this area",511
+0,Jerash,hay almataar,Al Qairawan PS,48hr every 17 day,"from the main pipe from the ps 150 there are 100 and 63, 50 feed this area",129
+0,Jerash,sooq and shara' al net,Al Jabal Al Akhtar Res (grivity),48hr every 17 day,there are 150 from REs and it convert to 200 and to this area 100 and 63 to feed this area,1637
+0,Jerash,bab amman and hay alstikbarat alqadeem and hay albeer almalih,Al Jabal Al Akhtar Res (grivity),48 every 20 day,"150 fronm Res and feed this area by 100, 63",413
+0,Jerash,Hay alhesba,Al Jabal Al Akhtar Res (grivity),24hr every 20 day,150 from Res feed 800 and redurn 150 and from 150 there area 100 and 63 feed this area,155
+0,Jerash,almanarh,Al Jabal Al Akhtar Res (grivity),48hr every 17 day,100 from 150 feed this area,189
+0,Jerash,Aljbarat,Al Jabal Al Akhtar Res (grivity),48hr every 17 day,"from the main pipe from the ps 150 there are 100 and 63, 50 feed this area",474
+0,Jerash,Hay alhaouze algharbi and hay almamoun,Al Jabal Al Akhtar Res (grivity),48hr every 17 day,"150 from the Res and it ruduction to 100,63 to feed this area",1056
+0,Jerash,Hay dames and Hay alhouz,Al Jabal Al Akhtar Res (grivity),48hr every 17 day,"from the main pipe from the ps 150 there are 100 and 63, 50 feed this area",180
+0,Jerash,hay almostashfa and hay altarkees alqadeeem,Al Jabal Al Akhtar Res (grivity),48hr every 17 day,"from the main pipe from the ps 150 there are 100 and 63, 50 feed this area",483
+0,Jerash,Hay hatamal and kalf alsooq,Al Jabal Al Akhtar Res (grivity),48hr every 17 day,"from the main pipe from the ps 300 there are 100 and 63, 50 feed this area",632
+0,Jerash,Jabal alatamt and hay almontazah,Al Jabal Al Akhtar Res (grivity),48hr every 17 day,in this area it feed by 150 from 300 and 100 from 150 and it reducion to 100 and 63 to feed this area,996
+0,Jerash,Eskan almoadafeen,Al Jabal Al Akhtar Res (grivity),48hr every 17 day,"this area is loop take the brainches 150 from the main pipe 300 and reduciton 100,63 to feed this arae",748
+0,Jerash,Hamta,Ain Aldeek PS,20 hr every 22 day,from ain aldeed to REsc borma to ain hamad area and from ain hamed 200mm to feed this area,264
+0,Jerash,Hay aldbasieh wasat albalad,well Borma & Ain hamid,3 day every 15 day,"from the well and Ain hamid to Res. Borma and from the Res to feed this area and some time direct from the network 200,100,63",108
+0,Jerash,Borma shamali gharbi,from Borma Well,4 day every day 5 hr and this repated every 15 day,from the Borma Well there area pipe feed this arae and this area is high elevation of the borma and less than of Well Borma,82
+0,Jerash,Hay qadah borma alqadeem,well Borma & Ain hamid,2 day every 15 day,this area feed gravity by Borma Res. by pipe 100mm,90
+0,Jerash,Hay Alfardees aljanoobi,well Borma & Ain hamid,4 day every 15 day,from the Res to this area by 150 to 100 and 63 to feed this area,284
+0,Jerash,Hay alskan almakroma,well Borma & Ain hamid,2 day every 18 day,From Res,105
+0,Jerash,Hay algharbi Borma and Akshabi,From Ain Aldeek PS to Res,80 hr every 22 day,200 from ain aldeek Res and from Res to this area by 150 to 100 and brainches 63,438
+0,Jerash,north Borma,by TAnk,by Tanks,this area feed by tankes,42
+0,Jerash,Hay almarqiz alsihi alqadeem,well Borma,1 and half day every 15 day,this area feed by the well borma direct by 63 from the main pipe 200mm,19
+0,Irbid-Bani Kinana,harima and abu alogas,Harima PS,sat 9pm to 1pm sun,"from PS two pipe 150, and 200mm and feed this area by 100, 63",948
+0,Irbid-Bani Kinana,Karja,Harima PS,wensday 8am to 8am friday (48hr),from the main pipe 150 from the ps to this area,1183
+0,Irbid-Bani Kinana,Alkaireh,Harima PS,all week,on pressure by reverse water,257
+0,Irbid-Bani Kinana,Al qasfah and alseeleh,Harima PS,friday 9 pm to 9pm sat,from 150 and 100 feed the water,540
+0,Irbid-Bani Kinana,Malka,Malka PS,10am  Wensday to 1am friday,from PS 200mm and reduction 150 and 100 and 63 to feed this area,1416
+0,Irbid-Bani Kinana,Almansourah,Malka PS,1am friday 1pm,from the 200mm to 100 to feed this area,629
+0,Irbid-Bani Kinana,Almansourah,syfeen ps,1pm friday to 11pm,from 300 from the ps,210
+0,Irbid-Bani Kinana,Um Qais,syfeen ps,8am friday  to 9am sat,this area feed by pumping from 150mm from 200mm from 300mm  pipe from Syfeen Res,835
+0,Irbid-Bani Kinana,Al Mukaiba altahta,Al shiq albarid PS,satarday and sunday,from 150 mm,476
+0,Irbid-Bani Kinana,Al mudaba alfoqa,Al shiq albarid PS,monday and tusday,from the 150 from the ps to feed this area,307
+0,Irbid-Bani Kinana,Kufer jayez,Harima PS & Bat Ras Res,9 am tusday to 9am wensday,from 200mm from the ps and it branches to 150 and from 400 there 200 branches,908
+0,Irbid-Bani Kinana,Sama Alrosan,Harima PS & Malka ps,monday 12pm to 2pm tusday,from 200 from ps harima there 150 branch to 400 (bata Ras ) used to feed this area and by 150 and 100 and from the north there are pipe from Malka ps to feed this area by mix water,1112
+0,Irbid-Bani Kinana,Azrit and Al-Kharibah,Harima PS,12pm friday to 2 am sat,from 300 there area branches 200 to 150 to feed this area,376
+0,Irbid-Bani Kinana,HBRAS,Harima PS & Bata Ras PS,friday 2 pm to 11pm,from two pipe 150 from 200 mm to feed this area,566
+0,Irbid-Bani Kinana,Habras/Mashhour neighborhood/Alalasha neighborhood,Quilba PS,tusday 2pm to 8pm,from 300 from ps to branches 150 to 100 to feed thisa area,242
+0,Irbid-Bani Kinana,HBRAS TAREED UM ALHOUAR,Quilba PS,tusday 2pm to 8pm,from 300 to 100 and 150 to feed this area,125
+0,Irbid-Bani Kinana,barshta and qaraqoush,Quilba PS,wensday 11am to 9pm,from 150 and small 63 feed this area duraing the main pipe to this branches,132
+0,Irbid-Bani Kinana,Harta and Aqraba,Quilba PS,tusday 12pm to 4am friday,by 150mm from the main pipe 300 from PS,1345
+0,Irbid-Bani Kinana,Bella,Quilba PS,sat 8am to 6am sun,this area feed by 150 mm,918
+0,Irbid-Bani Kinana,Alrafeed,Quilba PS,7pm friday to 8am sat,this area feed by 150 mm to 100 and 63,363
+0,Irbid-Bani Kinana,kufer som awal albalad,Quilba PS,friday 2am to 7 pm,150 from 200 to feed this area,339
+0,Irbid-Bani Kinana,Kufer sum albalad,Quilba PS,sun 6am to 12am tusday,150 from 200 to this area,1284
+0,Irbid-Bani Kinana,Saham,Malka ps,tusday 7am to 6pm wensday,"from 150 to 100 ,63 to feed thisvarea",1286
+0,Irbid-Bani Kinana,Samar,Quilba PS,12am tusday to 12pm,from 150 pipe for this are,744
+0,Irbid-Bani Kinana,Almathloma,Malka ps,sat 9am to 5pm,from 200 to 150 to 100 and 63 to feed thia area,227
+0,Irbid-Bani Kinana,Hatem,Malka ps,12 pm sun to 6am mon,from 150 and 100 and 63 from the main pipe 200,1011
+0,Irbid-Bani Kinana,Almazareeb,Malka ps,6am mon to 6pm,from 150 from 200 to this area,284
+0,Irbid-Bani Kinana,Abdr,Malka ps,sun 6am to 12 pm,from the main pipe 200 there area branches 100 and 150 feed this area,443
+0,Ajloun,Hay Naseem,Al Qantara PS,24 hr each 21 day,from 100mm from ps to this area and there area 63,281
+0,Ajloun,Al Mujamma'& Saqer,Al Qantara PS,24hr every 21 day,this area feed by pipe 100 from the PS to feed this area,432
+0,Ajloun,Ajloun Al balad,Al Qantara PS to Ajlun Res,24hr every 21 day,from the Al Qantara PS to Ajlun Res and from Res by pipe 150 gravity to this area and it reduction to 100 and 63 to feed this area,924
+0,Ajloun,Hay Al Fanadeq,Ishtafena PS,24hr each 21 day,"from Ishtafena PS by 150 pipe to feed this area and it divited to 100,63 to feed this area",224
+0,Ajloun,Sabaya,Zuqayq PS,24hr every 21 day,"the system in Zuqayq the wells feed the ps 1 and ps 1 rise the water to 2 and to 3 and ps 3 feed halawa area and also rise the water to PS 4 to feed other area by the main pipe line from the PS 200 and it divided to 150,125,100,63 to feed this area",223
+0,Ajloun,Romi,Zuqayq PS,24hr every 21 day,"the system in Zuqayq the wells feed the ps 1 and ps 1 rise the water to 2 and to 3 and ps 3 feed halawa area and also rise the water to PS 4 to feed other area by the main pipe line from the PS 200 and it divided to 150,125,100,63 to feed this area",123
+0,Ajloun,Al Khalayel & Abu Al Zatar,Zuqayq PS,24hr every 21 day,"the system in Zuqayq the wells feed the ps 1 and ps 1 rise the water to 2 and to 3 and ps 3 feed halawa area and also rise the water to PS 4 to feed other area by the main pipe line from the PS 200 and it divided to 150,125,100,63 to feed this area",186
+0,Ajloun,Abu huraira Mosque & Almudawwara,Zuqayq PS,24hr every 21 day,"the system in Zuqayq the wells feed the ps 1 and ps 1 rise the water to 2 and to 3 and ps 3 feed halawa area and also rise the water to PS 4 to feed other area by the main pipe line from the PS 200 and it divided to 150,125,100,63 to feed this area",464
+0,Ajloun,Health Center,Zuqayq PS,24hr every 21 day,"the system in Zuqayq the wells feed the ps 1 and ps 1 rise the water to 2 and to 3 and ps 3 feed halawa area and also rise the water to PS 4 to feed other area by the main pipe line from the PS 200 and it divided to 150,125,100,63 to feed this area",130
+0,Ajloun,Al Eshreen Street Halawah,Zuqayq PS,24hr every 21 day,"the system in Zuqayq the wells feed the ps 1 and ps 1 rise the water to 2 and to 3 and ps 3 feed halawa area and also rise the water to PS 4 to feed other area by the main pipe line from the PS 200 and it divided to 150,125,100,63 to feed this area",74
+0,Ajloun,Albalad Halawa,Zuqayq PS,24hr every 21 day,"the system in Zuqayq the wells feed the ps 1 and ps 1 rise the water to 2 and to 3 and ps 3 feed halawa area and also rise the water to PS 4 to feed other area by the main pipe line from the PS 200 and it divided to 150,125,100,63 to feed this area",140
+0,Ajloun,Al horah District,Zuqayq PS,24hr every 21 day,"the system in Zuqayq the wells feed the ps 1 and ps 1 rise the water to 2 and to 3 and ps 3 feed halawa area and also rise the water to PS 4 to feed other area by the main pipe line from the PS 200 and it divided to 150,125,100,63 to feed this area",34
+0,Ajloun,Al Aghwaar Street,Zuqayq PS4,24hr every 21 day,"the system in Zuqayq the wells feed the ps 1 and ps 1 rise the water to 2 and to 3 and ps 3 feed halawa area and also rise the water to PS 4 to feed other area by the main pipe line from the PS 200 and it divided to 150,125,100,63 to feed this area",81
+0,Ajloun,Al Qulai' District,Zuqayq PS 4,24hr every 21 day,"the system in Zuqayq the wells feed the ps 1 and ps 1 rise the water to 2 and to 3 and ps 3 feed halawa area and also rise the water to PS 4 to feed other area by the main pipe line from the PS 200 and it divided to 150,125,100,63 to feed this area",43
+0,Ajloun,Hospital & Governorate,Ishtafena PS,24 hr/ /all time,there area pipe line 100mm feed the hospital on all the time,11
+0,Ajloun,Abu Hatoum Upper,Ishtafena PS,48 every 28 day,from the main pipe 200 therea area branches 125 and 100 to feed this area and thera area abranches 63,90
+0,Ajloun,Abu Hatoum Lower,Ishtafena PS,48hr every 21 day,from the main pipe 200 therea area branches 125 and 100 to feed this area and thera area abranches 63,247
+0,Ajloun,Anjarah Al balad,Anjara Res,30hr every 28 day,fro the 300mm form Ras mon'ef to Anjara REs and from Res to this area by 150 to 100 63 to feed this area,855
+0,Ajloun,Haret Arabi,Anjara Res,15 hr every 28 day,fro the 300mm form Ras mon'ef to Anjara REs and from Res to this area by 150 to 100 63 to feed this area,379
+0,Ajlun,Amman Street,Anjara Res,15 hr every 28 day,fro the 300mm form Ras mon'ef to Anjara REs and from Res to this area by 150 to 100 63 to feed this area,145
+0,Ajlun,Al Elaiwat & Al Salous& Al zaizafoun,Ishtafena PS,48 every 28 day,from the main pipe lin 200 there area branches 100mm and 63 feed this area,372
+0,Ajloun,Al Ajami District,Anjara Res,15 every 28 day,fro the 300mm form Ras mon'ef to Anjara REs and from Res to this area by 150 to 100 63 to feed this area,479
+0,Ajloun,Al Dafe' Al Tahtani,Ishtafena PS,30hr every 28 day,from 200mm pipe from Ishtafena to 150 to 100 and 63 to feed this area,308
+0,Ajloun,Al Eshreen Street Anjarah,Ishtafena PS,24hr every 28 day,this area feed by pipe line 100 it take from 150 and from 200 from Ishtafena Ps and there are another sourse can feed it from Anjara Res by 100mm pip take from 150 and from 200mm,328
+0,Ajloun,Sukreen,Ishtafena PS,30hr every 28 day,from 200mm pipe from Ishtafena to 150 to 100 and 63 to feed this area,325
+0,Ajloun,Al Suyouf & Western District,Ishtafena PS,24hr every 28 day,this area feed by pipe line 100 from 150 from 200 main pipe,160
+0,Ajloun,Ayoub District,Ishtafena PS,24hr every 28 day,this area feed by 150mm it's branches from 200mm pipe from pumping from PS shtafina,33
+0,Ajloun,Anjarah/ Ain Albustan,Ishtafena PS,48 hr every 28 day,this area feed by pipe line 150 it takes from 200 from PS,668
+0,Ajloun,Al Makruma and Um Al Khashab Housing,Ishtafena PS,24 every 28 day,this area feed by pipe line 150 it takes from 200 from PS,148
+0,Ajloun,Al Ras district Ballas and Albalad,Ras monif ps,48hr every 28 day,"this area feed by 100,125 from 150 mm and from 200 from 300 from 400 from Res Ras moneef",275
+0,Ajlun,Thagret Zebaid,by Tanks,by Tanks,by Tanks,46
+0,Ajloun,Rajeb,Ain Um Qasim OS & Rajib Res,48hr every 21 day,"the water from ain Um Qasim to Rajeb REs and to this area by pipes 100,125,75 to 63,50 to feed this area",263
+0,Ajloun,Dahous,Ein Umm Qasem PS,24 every 21 day,pumping from ein um qasem ps by 100 mm,45
+0,Ajloun,Zarra'ah,Ras monif ps,12 evry 21 day,"this area feed by pipe 100mm from 200 from 300,400 from Ras moneef Res",52
+0,Ajloun,Fakheh & Sakhneh,Ras monif ps,12 hr every 21 day,"by pipe line 100 take from 200,300,400from Ras Moneef Res",77
+0,Ajloun,Shkarah,Ras monif ps,12 hr every 21 day,this area feed by pipe 100 take from 200 mm by gravity from Ras moneef Res,51
+0,Ajloun,Uwamer,safsafa ps,6hr every 21 day,this area feed by pumping from Safsafa PS by pipe 100mm,27
+0,Ajloun,Al Jabal Al Akhdar,safsafa ps,8hr every 21 day,this area feed by pumping from Safsafa Res from 125mm pipe take from 150,59
+0,Ajloun,Al Uqaili District,safsafa ps,8hr every 21 day,this area feed by pumping from Safsafa Res from 100 mm pipe take from 150,53
+0,Ajloun,Al Khushaba Al Wusta,safsafa ps,8hr every 21 day,this area feed by pumping from Safsafa Res from 100 mm pipe take from 150,63
+0,Ajloun,Kerbet Essooq,safsafa ps,8hr every 21 day,this area feed by pumping from Safsafa Res from 100 mm pipe take from 150,33
+0,Ajloun,Al khilla As samra & Albalad,Ras monif ps,36 hr every 21 day,"this area feed by gravity by 100mm from 150 from 200 , 400 from Ras Moneef Res",234
+0,Ajloun,Safit,Qantera PS,24 hr ever 14 day,this area feeded by pipe 100mm from Qantera PS,107
+0,Ajloun,Al Amiriyya,Ajloun Res.,36 hr every 14 day,feed by 125 pipeline take from 300 from Res,203
+0,Ajloun,Iraq Al Ain,Kofranja Lower Res,16 hr every 14 day,pumpinf lower Res by pipe line 100mm from 150 from 200,152
+0,Ajloun,Al Musherfeh,Kofranja Lower Res,12 hr every 14 day,this area feed by 100mm from 150 mm from Res Lower,81
+0,Ajloun,Al Kasayer,Kofranja Lower Res,12 hr every 14 day,this area feed by 100mm from 150 mm from Res Lower,230
+0,Ajloun,Al Aghwar Street,Kofranja Lower Res,14 hr every 14 day,this area feed by 100mm from 150 mm from Res Lower,63
+0,Ajloun,Kuifranjah & Al souq _Al jame',Kofranja Lower Res,14 hr every 14 day,this area feed by 100mm from 150 mm from Res Lower,388
+0,Ajloun,Al Shuwayyat + Al Teen,Kofranja Lower Res,24 hr every 14 day,this area feed by 100mm from 150 mm from Res Lower,253
+0,Ajloun,Al Sahel,Kofranja Lower Res,24 hr every 14 day,this area feed by 100mm from 150 mm from Res Lower,160
+0,Ajloun,Al Ma;sarah,Kofranja Lower Res,14 hr every 14 day,this area feed by 100mm from 150 mm from Res Lower,63
+0,Ajloun,Al Hora + Sarayer +Ab Al Najem,Kofranja Lower Res,36 hr every 14 day,this area feed by 100mm from 150 mm from Res Lower,498
+0,Ajloun,Al Daraj Lower,Kofranja Lower Res,26 hr every 14 day,this area feed by 100mm from 150 mm from Res Lower,264
+0,Ajloun,Al Daraj Upper,Kofranja Upper Res,24 hr every 14 day,this area feed by 100mm from 150 mm from Upper Res,60
+0,Ajloun,Hammoura,Kofranja Upper Res,14 hr every 14 day,this area feed by 100mm from 150 mm from Upper Res,129
+0,Ajloun,Al Nakrousheh,Kofranja Upper Res,12 hr every 14 day,this area feed by 100mm from 150 mm from Upper Res,88
+0,Ajloun,Um Ghamer,Kofranja Lower Res,26 hr every 14 day,pumpinf from lower Res  feed this area by 100mm from 150 mm from Res Lower,187
+0,Ajloun,Al Ananzeh North,Kofranja Lower Res,16 hr every 14 day,pumpinf from lower Res  feed this area by 100mm from 150 mm from Res Lower,152
+0,Ajloun,Al Ananzeh south,Kofranja Upper Res,22 hr every 14 day,this area feed by 100mm from 150 mm from Upper Res,111
+0,Ajloun,Hay Nimer + Um Al Ramel,Ajloun Res,48 hr every 14 day,from the main pip 150 take from 300 there are branches 100 to feed this area,307
+0,Ajloun,Berkeh Oqdeh Harth,Kofranja Lower Res,14 hr every 14 day,this area feed by 100mm from 150 mm from Res Lower,232
+0,Ajloun,In Between Tanks Area,Kofranja Lower Res,22 hr every 14 day,pumpinf from lower Res  feed this area by 100mm from 150 mm from Res Lower,142
+0,Jerash,Tareeq jaras and tear hamam,from Ras monei'f,Wensday 10pm to 6pm thursday,from 100mm pipe line and it feed this arae by branches 63 for this area,213
+0,Jerash,Alkfer,Al-Riyashi PS,90 hr to feed this area every 18 day,"from 150 mm the PS and it divided to 100, 63 to feed this area",405
+0,Jerash,Alabarah,Al-Riyashi PS,30 hr to feed this area every 18 day,"from 150 mm the PS and it divided to 100, 63 to feed this area",90
+0,Jerash,Reasha,Al-Riyashi PS,24 hr every 15 day,from pipe 100mm from the PS  to feed this area,55
+0,Jarash,haze and um ramih,Al-Riyashi PS,48hr every 18 day,from 150mm to feed this ara by 100 and 63,115
+0,Jarash,Um qantara,Al-Riyashi PS,60 hr every 18,from 150mm there arae 100 to feed this area,196
+0,Jarash,Alnabi houd alqadeem,Al-Riyashi PS,24 hr every 18 day,from 100 mm from the ps to feed this area,43
+0,Jarash,Nabh houd albald,Al-Riyashi PS,48  hr every 18 day,from 150mm feed this area to 100 and 63,288
+0,Jarash,Nabi houd wasat,Al-Riyashi PS,24 hr every 14 day,from 150 ps to 100 to feed this area by branches 63,186
+0,Jarash,Rashideh albald,Al-Riyashi PS,120 hr every 18 day,150 from the ps and it divided to 100 and 63 to feed this area,448
+0,Ajloun,Al Aghwar street,Zuqaiq PS4,24hr every 21 day,theis area feed by 100mm taken from 200 from PS by gravity,82
+0,Ajloun,Al Haddadin district,Zuqaiq PS4,24hr every 21 day,theis area feed by 100mm taken from 200 from PS by gravity,207
+0,Ajloun,Karm Al Ejel,Zuqaiq PS4,30hr every 21 day,this area feed by two branches 100mm pipes each one from 200 mm to feed this area by gravity from PS,290
+0,Ajloun,At Tatweer & Al balad Wahadneh,Zuqaiq PS4,48 hr every 21 day,this area feed by two branches 100mm pipes each one from 200 mm to feed this area by gravity from PS,270
+0,Ajloun,Al Iskan&Wadi abu Al zait,Zuqaiq PS4,48 hr every 21 day,this area feed by two branches 100mm pipes each one from 200 mm to feed this area by gravity from PS,209
+0,Ajloun,Khelet Salem,Zuqaiq PS4,24hr every 21 day,this area feed by pumping from PS by 100 from 150,102
+0,Ajloun,Sowwan Kofor Eddorrah,Zuqaiq PS4,8hr every 21 day,this area feed by pumping from PS by 100 from 150,37
+0,Ajloun,Lasteb,Ishtafena Res,8 hr every 21 day,this area feed by 150 pipe from Res,18
+0,Ajloun,Shtafaina,Shtafaina ps,12hr every 21 day,this area feed by 100 from 200mm from the ps pumping,131
+0,Ajloun,Dair Smadiyyeh Shamali,Zuqaiq PS4,6hr every 21 day,this area feed by 100mm pumping from PS,35
+0,Ajloun,Ahmad Al Gharaaybeh District,Zuqaiq PS4,8hr every 21 day,this area feed by 3 pipe 100mm pumping from PS,77
+0,Ajloun,Al Jowharah District,Zuqaiq PS4,30hr every 21 day,this area feed by 125 mm take from 200mm by gravity to feed this area,155
+0,Ajloun,Al Jalameh District,Zuqaiq PS4,14hr every 21 day,this area feed by 125 mm take from 200mm by gravity to feed this area,94
+0,Ajloun,Al Mayser District,Zuqaiq PS4,14hr every 21 day,this area feed by 125 mm take from 200mm by gravity to feed this area,67
+0,Ajloun,Al Arsh District,Zuqaiq PS4,10 hr every 21 day,this area feed by 125 mm take from 200mm by gravity to feed this area,34
+0,Ajloun,"Al ashla' ,Almadafet al gharaaybeh , alfakheet district",Zuqaiq PS4,36 hr every 21 day,this area feed by 125 mm take from 200mm by gravity to feed this area,159
+0,Ajloun,Al Elementary School District,Zuqaiq PS4,16 hr every 21 day,this area feed by100 from 125 mm take from 200mm by gravity to feed this area,172
+0,Ajloun,Al Madafet Abu Sini District,Zuqaiq PS4,14hr every 21 day,this area feed by 125 mm take from 200mm by gravity to feed this area,115
+0,Ajloun,Al Bareed District,Zuqaiq PS4,14hr every 21 day,this area feed by 125 mm take from 200mm by gravity to feed this area,99
+0,Ajloun,Al Qadisiyya Mosque District,Zuqaiq PS4,14hr every 21 day,"this area feed by 125 ,100 mm take from 200mm by gravity to feed this area",76
+0,Jerash,Thaghrat Asfour,bowida PS,8 hr every 14 day,"this area feed by pipe line 100, 150 from 300 to feed this area",115
+0,Jerash,Kufr Khal,Kufr Khal Res,48 hr every 14 day,this area feed by 100mm from Res,223
+0,Irbid-Qasaba,qaser alawadieen,Zabda Pumping,sat (2pm to 6pm ),600 and to 400 to feed this area,616
+0,Irbid-Qasaba,almostiashfiat fadeel aldabas,Zabda Pumping,thursday 4pm to to fiday 12pm,from400 to 350 from zabda,1615
+0,Irbid-Qasaba,Hay ATIBa',Zabda Pumping,tusday 12pm to 5am wensday,400to 350,4186
+0,Irbid-Qasaba,Zabda-Mantiqat Almadrasah,zabda pumping,thursday to friday,400 to 350 to feed this area,1803
+0,Irbid-Qasaba,Amama bint zaynab street&Al Mustafa Mosqu,"Zabda,Gravity",monday 8am to 4pm,this area feed by 800 by gravity zabda,2096
+0,Irbid-Qasaba,Hay Al afrah_Univercity circle,"Zabda,Gravity",sat 8am to 4pm,this area feed by grivity from 800,4753
+0,Irbid-Qasaba,Hay Al Abrar,"Zabda,Gravity",sat 6am to sun 8am,from 800 grivity,12187
+0,Irbid-Qasaba,dawaer alhokomi,Zabda Pumping,sat 8am to 8am sun,this area feed by 350 pipe pumping,782
+0,Irbid-Qasaba,qaser aladel,"Zabda,Gravity",sat 8am to 8pm,800 to 600 to feed thisa rea,1426
+0,Irbid-Qasaba,hadeqat alzahra and hi altlool,Zabda Pumping,mon 8am to 11 pm,this area feed by 600 jida pumping zabda,3391
+0,Irbid-Qasaba,shari'w alhashime altal,"Zabda,Gravity",monday 8am to 8am tusday,800 mm to 400 more than one pipe to feed this area,15426
+0,Irbid-Qasaba,turkoman,"Zabda,Gravity",sat 6am to 8pm,this area feed  by grivity 800,4248
+0,Irbid-Qasaba,hay altoaal,"Zabda,Gravity",monday 8am to 4pm,this area feed  by grivity 1200 to 300,1396
+0,Irbid-Qasaba,Albarha,"Zabda Pumping, Gravity",Wensday 6am to thursday 10 am,"Gharby 800 + 1200 , mid area grivity and sharqi from 200, 600 pumping",17853
+0,Irbid-Qasaba,Hay Al Karama & Hay Aliman,Zabda Pumping,Wensday,"200, 600 pumping",2175
+0,Irbid-Qasaba,Bata Ras,Zabda Pumping,from 12pm thursday to 12pm sat,600 mm Jika Puping,5828
+0,Irbid-Qasaba,Hay Al Afrah,zabda pupimg,sunday,This area feed by pumping 400 to 350,3261
+0,Irbid-Qasaba,Yarmouk University,Zabda Pumping,"sun, tusday, thursday (3hr every day)",150 pumig form zabda,418
+0,Irbid-Qasaba,alwoorod,Zabda Pumping,sunday 4pm to 8am monday,pumoing 200 from zabda,2834
+0,Irbid-Qasaba,koliat banat Irbid,"Zabda,Gravity",sat 8pm to 8am sun,this area feed by gravity form 800 zabda,3295
+0,Irbid-Qasaba,hadeqat tariq and masjed,Zabda Pumping,sat 12am to 8am sun,this area feed by 600 jida pumping zabda wensday 12am 8am +200 puming tusday 8am to 8am,3456
+0,Irbid-Qasaba,hadeqat twonis,Zabda Pumping,wensday 12am 8am +tusday 8am to 8am,this area feed by 600 pumping jika & 200 Pumping from zabda,5184
